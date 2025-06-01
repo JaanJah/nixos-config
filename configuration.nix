@@ -113,6 +113,13 @@
       user = {
         name = "Jaan Jahilo";
         email = "jaanjahilo@outlook.com";
+        signingKey = "~/.ssh/id_ed25519.pub";
+      };
+      commit = {
+        gpgsign = true;
+      };
+      gpg = {
+        format = "ssh";
       };
     };
   };
