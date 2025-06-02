@@ -146,6 +146,7 @@
   # TODO: Add spotify, bitwarden
   environment.systemPackages = with pkgs; [
     discord
+    fastfetch
     nixfmt-rfc-style
     kitty
   ];
