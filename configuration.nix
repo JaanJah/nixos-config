@@ -14,6 +14,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
+  boot.loader.timeout = 30; # https://github.com/NixOS/nixpkgs/blob/7282cb574e0607e65224d33be8241eae7cfe0979/nixos/modules/system/boot/loader/loader.nix
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
