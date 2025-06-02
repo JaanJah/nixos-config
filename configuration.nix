@@ -64,6 +64,10 @@ in
   # Configure console keymap
   console.keyMap = "et";
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.caskaydia-mono
+  ];
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
