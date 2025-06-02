@@ -141,8 +141,8 @@
   nix.settings.experimental-features = [
     "nix-command" "flakes"
   ];
-  # TODO: Add bitwarden
   environment.systemPackages = with pkgs; [
+    bitwarden-desktop
     discord
     fastfetch
     nixfmt-rfc-style
