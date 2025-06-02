@@ -12,3 +12,4 @@ nix develop
 TODO:
 - Add commands how to properly clone and setup on new machine
 - Add docs on what are the extra commands needed to run to setup new machine
+- Add .editorconfig for more convenient editing with vim

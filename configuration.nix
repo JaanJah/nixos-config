@@ -98,7 +98,7 @@
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "jaan";
-
+  # TODO: Install firefox extensions
   programs.firefox.enable = true;
   programs.fish.enable = true;
   programs.ssh.startAgent = true;
@@ -115,7 +115,8 @@
     '';
   };
   programs.vim.enable = true;
-  # TODO: Setup ssh config for different ssh keys for different projects
+  # TODO: Setup ssh config for different ssh keys for different project
+  # TODO: Add git aliases
   programs.git = {
     enable = true;
     config = {
