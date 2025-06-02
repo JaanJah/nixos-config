@@ -144,6 +144,7 @@
   # TODO: Add discord, spotify, bitwarden
   environment.systemPackages = with pkgs; [
     nixfmt-rfc-style
+    kitty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
