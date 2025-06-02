@@ -143,8 +143,9 @@
   nix.settings.experimental-features = [
     "nix-command" "flakes"
   ];
-  # TODO: Add discord, spotify, bitwarden
+  # TODO: Add spotify, bitwarden
   environment.systemPackages = with pkgs; [
+    discord
     nixfmt-rfc-style
     kitty
   ];
