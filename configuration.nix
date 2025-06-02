@@ -102,7 +102,6 @@
   services.displayManager.autoLogin.user = "jaan";
 
   programs.firefox.enable = true;
-  # TODO: Set fish as default shell
   programs.fish.enable = true;
   programs.ssh.startAgent = true;
   programs.bash = {
