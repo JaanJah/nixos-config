@@ -102,12 +102,14 @@
   services.displayManager.autoLogin.user = "jaan";
 
   programs.firefox.enable = true;
+  # TODO: Set fish as default shell
   programs.fish.enable = true;
   programs.ssh.startAgent = true;
   programs.bash.shellInit = ''
     bind 'set enable-bracketed-paste off'
   '';
   programs.vim.enable = true;
+  # TODO: Setup ssh config for different ssh keys for different projects
   programs.git = {
     enable = true;
     config = {
@@ -130,8 +132,7 @@
   nix.settings.experimental-features = [
     "nix-command" "flakes"
   ];
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # TODO: Add discord, spotify, bitwarden
   environment.systemPackages = with pkgs; [
     nixfmt-rfc-style
   ];
