@@ -141,12 +141,13 @@
   nix.settings.experimental-features = [
     "nix-command" "flakes"
   ];
-  # TODO: Add spotify, bitwarden
+  # TODO: Add bitwarden
   environment.systemPackages = with pkgs; [
     discord
     fastfetch
     nixfmt-rfc-style
     kitty
+    spotify
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
