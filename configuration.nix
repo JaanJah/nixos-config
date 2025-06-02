@@ -129,6 +129,9 @@
       commit = {
         gpgsign = true;
       };
+      core = {
+        editor = "vim";
+      };
       gpg = {
         format = "ssh";
       };
