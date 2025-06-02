@@ -3,11 +3,14 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
-
+let
+  home-manager = builtins.fetchTarball https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz;
+in
 {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    (import "${home-manager}/nixos")
   ];
 
   # Bootloader.
@@ -94,7 +97,11 @@
       kdePackages.kate
     ];
   };
-
+  home-manager.users.jaan = { pkgs, ... }: {
+    # The state version is required and should stay at the version you
+    # originally installed.
+    home.stateVersion = "25.05";
+  };
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "jaan";
