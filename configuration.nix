@@ -139,7 +139,8 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [
-    "nix-command" "flakes"
+    "nix-command"
+    "flakes"
   ];
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
