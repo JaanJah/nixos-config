@@ -99,7 +99,25 @@
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "jaan";
   # TODO: Install firefox extensions
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    policies = {
+      ExtensionSettings = with builtins;
+        let
+          extension = shortId: uuid: {
+            name = uuid;
+            value = {
+              install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
+              installation_mode = "normal_installed";
+            };
+          };
+          # Find id in about:support#addons
+        in
+        listToAttrs [
+          (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
+        ];
+    };
+  };
   programs.fish.enable = true;
   programs.ssh.startAgent = true;
   programs.bash = {
