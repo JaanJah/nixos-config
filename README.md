@@ -5,9 +5,15 @@ This repo contains my NixOS config I use on my home machine.
 ## Usage
 
 ```sh
-# There is a flake present for running nixfmt as a pre-commit hook, to set it up run
-nix develop
+# Symlink flake.nix and flake.lock
+sudo ln -s ~/nixos-config/flake.nix /etc/nixos/flake.nix
+sudo ln -s ~/nixos-config/flake.lock /etc/nixos/flake.lock
+# Rebuild system
+sudo nixos-rebuild switch
+# Update flake.lock
+sudo nix flake update
 ```
+
 
 TODO:
 - Add commands how to properly clone and setup on new machine
