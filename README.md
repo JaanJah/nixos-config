@@ -18,3 +18,6 @@ sudo nix flake update
 TODO:
 - Add commands how to properly clone and setup on new machine
 - Add docs on what are the extra commands needed to run to setup new machine
+
+Personal notes:
+- Good structure from https://github.com/ryan4yin/nix-config/tree/i3-kickstarter

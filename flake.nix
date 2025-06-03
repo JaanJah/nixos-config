@@ -26,7 +26,7 @@
             inherit specialArgs;
             system = "x86_64-linux";
             modules = [
-              ./configuration.nix
+              ./hosts/nixos
               home-manager.nixosModules.home-manager
               {
                 home-manager.useGlobalPkgs = true;
