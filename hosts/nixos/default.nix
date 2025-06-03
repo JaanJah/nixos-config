@@ -5,6 +5,8 @@
 { config, pkgs, ... }:
 {
   imports = [
+    ../../modules/system.nix
+
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
   ];
@@ -25,44 +27,10 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
-  time.timeZone = "Europe/Tallinn";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "et_EE.UTF-8";
-    LC_IDENTIFICATION = "et_EE.UTF-8";
-    LC_MEASUREMENT = "et_EE.UTF-8";
-    LC_MONETARY = "et_EE.UTF-8";
-    LC_NAME = "et_EE.UTF-8";
-    LC_NUMERIC = "et_EE.UTF-8";
-    LC_PAPER = "et_EE.UTF-8";
-    LC_TELEPHONE = "et_EE.UTF-8";
-    LC_TIME = "et_EE.UTF-8";
-  };
-
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = false;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "ee";
-    variant = "";
-  };
 
   # Configure console keymap
   console.keyMap = "et";
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.caskaydia-mono
-  ];
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -97,9 +65,6 @@
       kdePackages.kate
     ];
   };
-  # Enable automatic login for the user.
-  services.displayManager.autoLogin.enable = true;
-  services.displayManager.autoLogin.user = "jaan";
   # TODO: Install firefox extensions
   programs.firefox = {
     enable = true;
