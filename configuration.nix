@@ -137,6 +137,7 @@
     '';
   };
   programs.vim.enable = true;
+  programs.vim.defaultEditor = true;
   # TODO: Setup ssh config for different ssh keys for different project
   # TODO: Add git aliases
   programs.git = {
