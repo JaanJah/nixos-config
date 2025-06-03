@@ -139,6 +139,7 @@
     nixfmt-rfc-style
     kitty
     spotify
+    zed-editor
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
