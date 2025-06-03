@@ -158,6 +158,7 @@
       };
     };
   };
+  programs.htop.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
