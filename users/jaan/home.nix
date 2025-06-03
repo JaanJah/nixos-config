@@ -20,6 +20,9 @@
     plugins = with pkgs.vimPlugins; [
       editorconfig-vim
     ];
+    extraConfig = ''
+      set mouse=a
+    '';
   };
 }
 
