@@ -15,5 +15,11 @@
       bold_italic_font = "CaskaydiaMono NFM Bold Italic";
     };
   };
+  programs.vim = {
+    enable = true;
+    plugins = with pkgs.vimPlugins; [
+      editorconfig-vim
+    ];
+  };
 }
 
