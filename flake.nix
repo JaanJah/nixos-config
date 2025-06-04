@@ -11,7 +11,12 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }@inputs:
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
     let
       supportedSystems = [
         "x86_64-linux"
@@ -26,7 +31,9 @@
         nixos =
           let
             username = "jaan";
-            specialArgs = { inherit username; };
+            specialArgs = {
+              inherit username;
+            };
           in
           nixpkgs.lib.nixosSystem {
             inherit specialArgs;
@@ -54,6 +61,13 @@
               excludes = [ "hardware-configuration\\.nix$" ];
             };
           };
+        };
+      });
+
+      devShells = forAllSystems (system: {
+        default = nixpkgs.legacyPackages.${system}.mkShell {
+          inherit (self.checks.${system}.pre-commit-check) shellHook;
+          buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
         };
       });
     };
