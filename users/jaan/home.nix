@@ -3,6 +3,8 @@
 {
   imports = [
     ../../home/core.nix
+
+    ../../home/programs
   ];
   # https://github.com/nix-community/home-manager/tree/release-25.05/modules/programs
   programs.kitty = {

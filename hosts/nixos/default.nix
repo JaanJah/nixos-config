@@ -104,27 +104,6 @@
   };
   programs.vim.enable = true;
   programs.vim.defaultEditor = true;
-  # TODO: Setup ssh config for different ssh keys for different project
-  # TODO: Add git aliases
-  programs.git = {
-    enable = true;
-    config = {
-      user = {
-        name = "Jaan Jahilo";
-        email = "jaanjahilo@outlook.com";
-        signingKey = "~/.ssh/id_ed25519.pub";
-      };
-      commit = {
-        gpgsign = true;
-      };
-      core = {
-        editor = "vim";
-      };
-      gpg = {
-        format = "ssh";
-      };
-    };
-  };
   programs.htop.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
