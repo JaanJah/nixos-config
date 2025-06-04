@@ -27,10 +27,8 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-
   # Configure console keymap
   console.keyMap = "et";
-
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -69,7 +67,8 @@
   programs.firefox = {
     enable = true;
     policies = {
-      ExtensionSettings = with builtins;
+      ExtensionSettings =
+        with builtins;
         let
           extension = shortId: uuid: {
             name = uuid;
