@@ -24,6 +24,14 @@
     nerd-fonts.caskaydia-mono
   ];
 
+  nix = {
+    settings.experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
+  };
+  nixpkgs.config.allowUnfree = true;
+
   services = {
     desktopManager.plasma6.enable = true;
     displayManager = {

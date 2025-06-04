@@ -102,13 +102,7 @@
     '';
   };
   programs.htop.enable = true;
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
     discord
