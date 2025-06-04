@@ -102,8 +102,6 @@
       fi
     '';
   };
-  programs.vim.enable = true;
-  programs.vim.defaultEditor = true;
   programs.htop.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

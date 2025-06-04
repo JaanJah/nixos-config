@@ -18,16 +18,6 @@
       bold_italic_font = "CaskaydiaMono NFM Bold Italic";
     };
   };
-  programs.vim = {
-    enable = true;
-    plugins = with pkgs.vimPlugins; [
-      editorconfig-vim
-    ];
-    extraConfig = ''
-      set mouse=a
-      set clipboard=unnamed
-    '';
-  };
   # https://wiki.nixos.org/wiki/Zed
   programs.zed-editor = {
     enable = true;
@@ -82,4 +72,3 @@
     ];
   };
 }
-
