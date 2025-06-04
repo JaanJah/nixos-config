@@ -10,7 +10,7 @@
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, pre-commit-hooks, ... }@inputs:
+  outputs = { nixpkgs, home-manager, ... }@inputs:
     let
       supportedSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
