@@ -6,7 +6,7 @@
 {
   imports = [
     ../../modules/system.nix
-
+    ../../modules/nvidia.nix
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
   ];
@@ -77,8 +77,8 @@
               installation_mode = "normal_installed";
             };
           };
-          # Find id in about:support#addons
         in
+        # Find id in about:support#addons
         listToAttrs [
           (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
           (extension "tampermonkey" "firefox@tampermonkey.net")
