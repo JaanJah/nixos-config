@@ -1,6 +1,7 @@
-{ pkgs
-, username
-, ...
+{
+  pkgs,
+  username,
+  ...
 }:
 {
   time.timeZone = "Europe/Tallinn";
