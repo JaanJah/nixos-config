@@ -53,6 +53,20 @@
         mute_on_join = true;
       };
       format_on_save = "on";
+      languages = {
+        # https://github.com/zed-industries/zed/issues/21680#issuecomment-2536751118
+        Nix = {
+          language_servers = [
+            "nil"
+            "!nixd"
+          ];
+          formatter = {
+            external = {
+              command = "nixfmt";
+            };
+          };
+        };
+      };
     };
     userKeymaps = [
       {
