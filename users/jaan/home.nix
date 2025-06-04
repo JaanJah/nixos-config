@@ -52,7 +52,7 @@
       calls = {
         mute_on_join = true;
       };
-      format_on_save = true;
+      format_on_save = "on";
     };
     userKeymaps = [
       {
