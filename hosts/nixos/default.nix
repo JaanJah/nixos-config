@@ -121,6 +121,7 @@
     nixfmt-rfc-style
     kitty
     spotify
+    tree
     zed-editor
   ];
 
