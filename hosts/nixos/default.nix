@@ -114,6 +114,11 @@
     bitwarden-desktop
     discord
     fastfetch
+
+    # Nix language server dependencies
+    nil
+    nixd
+
     nixfmt-rfc-style
     kitty
     spotify
