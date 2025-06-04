@@ -1,7 +1,8 @@
 { pkgs
 , username
 , ...
-}: {
+}:
+{
   time.timeZone = "Europe/Tallinn";
 
   i18n = {
@@ -23,8 +24,8 @@
     nerd-fonts.caskaydia-mono
   ];
 
-
   services = {
+    desktopManager.plasma6.enable = true;
     displayManager = {
       autoLogin = {
         enable = true;
@@ -40,6 +41,4 @@
       };
     };
   };
-
-  services.desktopManager.plasma6.enable = true;
 }
