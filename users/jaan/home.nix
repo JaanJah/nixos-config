@@ -23,6 +23,7 @@
     ];
     extraConfig = ''
       set mouse=a
+      set clipboard=unnamed
     '';
   };
   # https://wiki.nixos.org/wiki/Zed
