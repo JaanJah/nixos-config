@@ -31,6 +31,9 @@
         version = "2";
       };
       base_keymap = "JetBrains";
+      features = {
+        edit_prediction_provider = "copilot";
+      };
       telemetry = {
         diagnostics = false;
         metrics = false;
