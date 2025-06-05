@@ -68,6 +68,10 @@
     spotify
     tree
     zed-editor
+
+    # Packages needed for screenshot
+    (flameshot.override { enableWlrSupport = true; })
+    kdePackages.xdg-desktop-portal-kde
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
