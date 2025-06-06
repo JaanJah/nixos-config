@@ -63,6 +63,10 @@
     nil
     nixd
 
+    # Go packages
+    go
+    gopls
+
     nixfmt-rfc-style
     kitty
     spotify
