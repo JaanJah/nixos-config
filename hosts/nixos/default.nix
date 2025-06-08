@@ -77,6 +77,7 @@
     kdePackages.xdg-desktop-portal-kde
 
     kdePackages.kate
+    kdePackages.okular
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
