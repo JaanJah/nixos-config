@@ -69,6 +69,7 @@
     gopls
 
     nixfmt-rfc-style
+    ncdu
     kitty
     spotify
     tree
