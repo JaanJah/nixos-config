@@ -32,9 +32,6 @@
       "networkmanager"
       "wheel"
     ];
-    packages = with pkgs; [
-      kdePackages.kate
-    ];
   };
 
   programs.thunderbird.enable = true;
@@ -78,6 +75,8 @@
     # Packages needed for screenshot
     (flameshot.override { enableWlrSupport = true; })
     kdePackages.xdg-desktop-portal-kde
+
+    kdePackages.kate
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

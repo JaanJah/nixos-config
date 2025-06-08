@@ -1,4 +1,3 @@
-{ pkg, ... }:
 {
   # nix run github:nix-community/plasma-manager
   # https://github.com/nix-community/plasma-manager/blob/b7697abe89967839b273a863a3805345ea54ab56/examples/homeManager/home.nix
