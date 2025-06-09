@@ -71,6 +71,11 @@
     spotify
     tree
     zed-editor
+    unzip
+
+    # Wine stuff
+    wineWowPackages.stable
+    winetricks
 
     # Packages needed for screenshot
     (flameshot.override { enableWlrSupport = true; })
