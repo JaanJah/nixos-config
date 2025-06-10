@@ -54,6 +54,11 @@
         mute_on_join = true;
       };
       format_on_save = "on";
+      git = {
+        inline_blame = {
+          enabled = false;
+        };
+      };
       languages = {
         # https://github.com/zed-industries/zed/issues/21680#issuecomment-2536751118
         Nix = {
