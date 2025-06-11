@@ -2,6 +2,9 @@
   description = "jaan's NixOS configuration";
 
   inputs = {
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+    };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -52,7 +55,10 @@
                 home-manager.useUserPackages = true;
                 home-manager.extraSpecialArgs = inputs // specialArgs;
                 home-manager.backupFileExtension = ".bak";
-                home-manager.sharedModules = [ plasma-manager.homeManagerModules.plasma-manager ];
+                home-manager.sharedModules = [
+                  inputs.nixcord.homeModules.nixcord
+                  plasma-manager.homeManagerModules.plasma-manager
+                ];
                 home-manager.users.${username} = import ./users/${username}/home.nix;
               }
             ];

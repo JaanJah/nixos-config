@@ -54,7 +54,6 @@
 
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
-    discord
     fastfetch
 
     # Nix language server dependencies
