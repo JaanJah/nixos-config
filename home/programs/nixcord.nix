@@ -9,6 +9,7 @@
       enable = true;
     };
     config = {
+      # https://github.com/KaylorBen/nixcord/blob/cc750b99c76c83809cb7e492cab6930c610faa64/docs/plugins.md
       plugins = {
         chatInputButtonAPI.enable = true;
         commandsAPI.enable = true;
