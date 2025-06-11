@@ -10,6 +10,36 @@
     };
     config = {
       plugins = {
+        chatInputButtonAPI = {
+          enable = true;
+        };
+        commandsAPI = {
+          enable = true;
+        };
+        memberListDecoratorsAPI = {
+          enable = true;
+        };
+        messageAccessoriesAPI = {
+          enable = true;
+        };
+        messageDecorationsAPI = {
+          enable = true;
+        };
+        messageEventsAPI = {
+          enable = true;
+        };
+        messagePopoverAPI = {
+          enable = true;
+        };
+        messageUpdaterAPI = {
+          enable = true;
+        };
+        serverListAPI = {
+          enable = true;
+        };
+        userSettingsAPI = {
+          enable = true;
+        };
         crashHandler = {
           enable = true;
           attemptToPreventCrashes = true;
