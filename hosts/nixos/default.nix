@@ -9,7 +9,7 @@
     ../../modules/boot.nix
     ../../modules/system.nix
     ../../modules/network.nix
-    ../../modules/nvidia.nix
+    #../../modules/nvidia.nix
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
   ];
