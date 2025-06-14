@@ -10,6 +10,7 @@
       # Language Servers
       "html"
       "nix"
+      "package-version-server"
 
       # Themes
       "catppuccin"
