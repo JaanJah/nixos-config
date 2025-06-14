@@ -5,6 +5,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ../../modules/amd.nix
     ../../modules/audio.nix
     ../../modules/boot.nix
     ../../modules/system.nix
