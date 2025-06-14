@@ -8,6 +8,7 @@
     ../../modules/amd.nix
     ../../modules/audio.nix
     ../../modules/boot.nix
+    ../../modules/podman.nix
     ../../modules/system.nix
     ../../modules/network.nix
     #../../modules/nvidia.nix
