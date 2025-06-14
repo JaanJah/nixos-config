@@ -67,6 +67,9 @@
     go
     gopls
 
+    # Node.js packages
+    nodejs
+
     nixfmt-rfc-style
     ncdu
     kitty
