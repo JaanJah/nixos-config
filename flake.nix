@@ -54,7 +54,7 @@
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;
                 home-manager.extraSpecialArgs = inputs // specialArgs;
-                home-manager.backupFileExtension = ".bak";
+                home-manager.backupFileExtension = "bak";
                 home-manager.sharedModules = [
                   inputs.nixcord.homeModules.nixcord
                   plasma-manager.homeManagerModules.plasma-manager
