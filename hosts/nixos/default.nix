@@ -57,7 +57,6 @@
 
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
-    fastfetch
 
     # Nix language server dependencies
     nil
