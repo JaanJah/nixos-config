@@ -1,6 +1,7 @@
 {
   imports = [
     ./zed
+    ./btop.nix
     ./firefox.nix
     ./git.nix
     ./kitty.nix
