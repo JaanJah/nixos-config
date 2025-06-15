@@ -6,6 +6,7 @@
     ./kitty.nix
     ./nixcord.nix
     ./plasma.nix
+    ./thunderbird.nix
     ./vim.nix
   ];
 }

@@ -38,7 +38,6 @@
     ];
   };
 
-  programs.thunderbird.enable = true;
   programs.fish.enable = true;
   programs.ssh.startAgent = true;
   programs.bash = {
