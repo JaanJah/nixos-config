@@ -1,6 +1,7 @@
 {
   imports = [
     ./zed
+    ./bash.nix
     ./btop.nix
     ./fastfetch.nix
     ./firefox.nix

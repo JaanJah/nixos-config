@@ -39,18 +39,6 @@
   };
 
   programs.ssh.startAgent = true;
-  programs.bash = {
-    shellInit = ''
-      bind 'set enable-bracketed-paste off'
-    '';
-    interactiveShellInit = ''
-      if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
-      then
-        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
-        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
-      fi
-    '';
-  };
   programs.htop.enable = true;
   programs.steam.enable = true;
 
