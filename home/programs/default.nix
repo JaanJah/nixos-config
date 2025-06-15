@@ -7,6 +7,7 @@
     ./firefox.nix
     ./fish.nix
     ./git.nix
+    ./htop.nix
     ./kitty.nix
     ./nixcord.nix
     ./plasma.nix
