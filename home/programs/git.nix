@@ -1,10 +1,4 @@
 {
-  pkgs,
-  ...
-}:
-{
-  home.packages = [ pkgs.git ];
-
   # TODO: Setup ssh config for different ssh keys for different project
   programs.git = {
     enable = true;
