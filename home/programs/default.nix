@@ -4,6 +4,7 @@
     ./btop.nix
     ./fastfetch.nix
     ./firefox.nix
+    ./fish.nix
     ./git.nix
     ./kitty.nix
     ./nixcord.nix

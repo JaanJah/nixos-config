@@ -38,7 +38,6 @@
     ];
   };
 
-  programs.fish.enable = true;
   programs.ssh.startAgent = true;
   programs.bash = {
     shellInit = ''
