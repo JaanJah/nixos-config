@@ -22,6 +22,8 @@
     };
   };
 
+  console.keyMap = "et";
+
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-mono
   ];

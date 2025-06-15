@@ -6,13 +6,16 @@
 {
   imports = [
     # Import modules
+    # TODO: Make modules toggleable by variables
     ../../modules/amd.nix
     ../../modules/audio.nix
     ../../modules/boot.nix
     ../../modules/network.nix
     #../../modules/nvidia.nix
     ../../modules/podman.nix
+    #../../modules/printer.nix
     ../../modules/system.nix
+    #../../modules/touchpad.nix
 
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -20,15 +23,6 @@
 
   networking.hostName = "nixos"; # Define your hostname.
 
-  # Configure console keymap
-  console.keyMap = "et";
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jaan = {
     isNormalUser = true;
     description = "jaan";
@@ -73,17 +67,6 @@
     kdePackages.kate
     kdePackages.okular
   ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
