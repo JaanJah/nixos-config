@@ -60,7 +60,6 @@
     kitty
     spotify
     tree
-    zed-editor
     unzip
 
     # Wine stuff
