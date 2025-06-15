@@ -5,13 +5,15 @@
 { pkgs, ... }:
 {
   imports = [
+    # Import modules
     ../../modules/amd.nix
     ../../modules/audio.nix
     ../../modules/boot.nix
-    ../../modules/podman.nix
-    ../../modules/system.nix
     ../../modules/network.nix
     #../../modules/nvidia.nix
+    ../../modules/podman.nix
+    ../../modules/system.nix
+
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
   ];
