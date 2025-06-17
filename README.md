@@ -18,10 +18,13 @@ sudo nix flake update
 nix flake check
 ```
 
-
 TODO:
+
+- Add docs for troubleshooting
+- Add separate legacy boot mode and UEFI boot mode config
 - Add commands how to properly clone and setup on new machine
 - Add docs on what are the extra commands needed to run to setup new machine
 
 Personal notes:
+
 - Good structure from https://github.com/ryan4yin/nix-config/tree/i3-kickstarter
