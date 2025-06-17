@@ -46,6 +46,9 @@
     go
     gopls
 
+    # Markdown language server
+    marksman
+
     # Node.js packages
     nodejs
 
