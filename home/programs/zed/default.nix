@@ -8,9 +8,12 @@
     # https://zed.dev/extensions
     extensions = [
       # Language Servers
+      "discord-presence"
       "html"
       "nix"
       "sql"
+
+      "package-version-server"
 
       # Themes
       "catppuccin"
