@@ -10,7 +10,6 @@
       # Language Servers
       "html"
       "nix"
-      "package-version-server"
       "sql"
 
       # Themes
