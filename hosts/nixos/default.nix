@@ -38,23 +38,6 @@
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
 
-    # Nix language server dependencies
-    nil
-    nixd
-
-    # Go packages
-    go
-    gopls
-
-    # Markdown language server
-    marksman
-
-    # Package.json language server
-    package-version-server
-
-    # Node.js packages
-    nodejs
-
     nixfmt-rfc-style
     ncdu
     kitty
