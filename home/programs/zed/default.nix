@@ -8,7 +8,7 @@
     # https://zed.dev/extensions
     extensions = [
       # Language Servers
-      "discord-presence"
+      #"discord-presence" # Requires rust to be installed
       "html"
       "nix"
       "sql"
