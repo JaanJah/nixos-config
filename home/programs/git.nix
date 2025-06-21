@@ -20,6 +20,9 @@
       gpg = {
         format = "ssh";
       };
+      push = {
+        autoSetupRemote = true;
+      };
       user = {
         name = "Jaan Jahilo";
         email = "jaanjahilo@outlook.com";
