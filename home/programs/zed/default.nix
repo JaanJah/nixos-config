@@ -35,9 +35,6 @@
 
       # Package.json language server
       package-version-server
-
-      # Node.js packages
-      nodejs
     ];
     userSettings = {
       agent = {
