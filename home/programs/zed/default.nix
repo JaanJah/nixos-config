@@ -13,8 +13,6 @@
       "nix"
       "sql"
 
-      "package-version-server"
-
       # Themes
       "catppuccin"
 
