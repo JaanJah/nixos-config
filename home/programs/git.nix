@@ -11,11 +11,6 @@
         sync = "!git switch $(git remote show origin | sed -n '/HEAD branch/s/.*: //p') && git pull --prune && git rm-merged";
         br = "!git branch --format '%(refname:short) %(upstream:track)'";
       };
-      user = {
-        name = "Jaan Jahilo";
-        email = "jaanjahilo@outlook.com";
-        signingKey = "~/.ssh/id_ed25519.pub";
-      };
       commit = {
         gpgsign = true;
       };
@@ -24,6 +19,11 @@
       };
       gpg = {
         format = "ssh";
+      };
+      user = {
+        name = "Jaan Jahilo";
+        email = "jaanjahilo@outlook.com";
+        signingKey = "~/.ssh/id_ed25519.pub";
       };
     };
   };
