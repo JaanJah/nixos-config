@@ -9,6 +9,7 @@
     extensions = [
       # Language Servers
       #"discord-presence" # Requires rust to be installed
+      "dockerfile"
       "html"
       "git-firefly"
       "nix"
