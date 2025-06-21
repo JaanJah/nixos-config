@@ -10,6 +10,7 @@
       # Language Servers
       #"discord-presence" # Requires rust to be installed
       "html"
+      "git-firefly"
       "nix"
       "sql"
 
