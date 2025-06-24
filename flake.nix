@@ -2,6 +2,10 @@
   description = "jaan's NixOS configuration";
 
   inputs = {
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixcord = {
       url = "github:kaylorben/nixcord";
     };
@@ -22,6 +26,7 @@
     {
       self,
       nixpkgs,
+      nix-index-database,
       home-manager,
       plasma-manager,
       ...
@@ -49,6 +54,7 @@
             system = "x86_64-linux";
             modules = [
               ./hosts/nixos
+              nix-index-database.nixosModules.nix-index
               home-manager.nixosModules.home-manager
               {
                 home-manager.useGlobalPkgs = true;

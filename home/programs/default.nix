@@ -9,6 +9,7 @@
     ./git.nix
     ./htop.nix
     ./kitty.nix
+    ./nix-index.nix
     ./nixcord.nix
     ./plasma.nix
     ./thunderbird.nix
