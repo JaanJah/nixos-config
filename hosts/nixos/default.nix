@@ -59,10 +59,6 @@
     wineWowPackages.stable
     winetricks
 
-    # Packages needed for screenshot
-    (flameshot.override { enableWlrSupport = true; })
-    kdePackages.xdg-desktop-portal-kde
-
     kdePackages.kate
     kdePackages.okular
   ];
