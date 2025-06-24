@@ -55,6 +55,9 @@
     binutils
     libgcc
 
+    # Markdown language server
+    marksman
+
     # Wine stuff
     wineWowPackages.stable
     winetricks

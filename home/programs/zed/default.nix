@@ -30,9 +30,6 @@
       go
       gopls
 
-      # Markdown language server
-      marksman
-
       # Package.json language server
       package-version-server
     ];
