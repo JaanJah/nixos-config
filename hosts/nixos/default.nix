@@ -49,6 +49,8 @@
     tree
     unzip
 
+    gnumake
+
     # Wine stuff
     wineWowPackages.stable
     winetricks
