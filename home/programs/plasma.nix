@@ -8,16 +8,6 @@
       "KDE Keyboard Layout Switcher"."Switch to Last-Used Keyboard Layout" = "Meta+Alt+L";
       "KDE Keyboard Layout Switcher"."Switch to Next Keyboard Layout" = "Meta+Alt+K";
       "kaccess"."Toggle Screen Reader On and Off" = "Meta+Alt+S";
-      "kcm_touchpad"."Disable Touchpad" = "Touchpad Off";
-      "kcm_touchpad"."Enable Touchpad" = "Touchpad On";
-      "kcm_touchpad"."Toggle Touchpad" = [
-        "Touchpad Toggle"
-        "Meta+Ctrl+Touchpad Toggle"
-        "Meta+Ctrl+Zenkaku Hankaku,Touchpad Toggle"
-        "Touchpad Toggle"
-        "Meta+Ctrl+Touchpad Toggle"
-        "Meta+Ctrl+Zenkaku Hankaku"
-      ];
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
       "kmix"."decrease_volume" = "Volume Down";
       "kmix"."decrease_volume_small" = "Shift+Volume Down";
@@ -26,37 +16,40 @@
       "kmix"."increase_volume_small" = "Shift+Volume Up";
       "kmix"."mic_mute" = [
         "Microphone Mute"
-        "Meta+Volume Mute,Microphone Mute"
+        ""
+        "Meta+Volume Mute\\, ,Microphone Mute"
         "Meta+Volume Mute,Mute Microphone"
       ];
       "kmix"."mute" = "Volume Mute";
-      "ksmserver"."Halt Without Confirmation" = "none,,Shut Down Without Confirmation";
+      "ksmserver"."Halt Without Confirmation" = [ ];
       "ksmserver"."Lock Session" = [
         "Meta+L"
-        "Screensaver,Meta+L"
+        ""
+        "Screensaver\\, ,Meta+L"
         "Screensaver,Lock Session"
       ];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
-      "ksmserver"."Log Out Without Confirmation" = "none,,Log Out Without Confirmation";
-      "ksmserver"."LogOut" = "none,,Log Out";
-      "ksmserver"."Reboot" = "none,,Reboot";
-      "ksmserver"."Reboot Without Confirmation" = "none,,Reboot Without Confirmation";
-      "ksmserver"."Shut Down" = "none,,Shut Down";
+      "ksmserver"."Log Out Without Confirmation" = [ ];
+      "ksmserver"."LogOut" = [ ];
+      "ksmserver"."Reboot" = [ ];
+      "ksmserver"."Reboot Without Confirmation" = [ ];
+      "ksmserver"."Shut Down" = [ ];
       "kwin"."Activate Window Demanding Attention" = "Meta+Ctrl+A";
       "kwin"."Cycle Overview" = [ ];
       "kwin"."Cycle Overview Opposite" = [ ];
-      "kwin"."Decrease Opacity" = "none,,Decrease Opacity of Active Window by 5%";
+      "kwin"."Decrease Opacity" = "\\, ,,Decrease Opacity of Active Window by 5%";
       "kwin"."Edit Tiles" = "Meta+T";
       "kwin"."Expose" = "Ctrl+F9";
       "kwin"."ExposeAll" = [
         "Ctrl+F10"
-        "Launch (C),Ctrl+F10"
+        ""
+        "Launch (C)\\, ,Ctrl+F10"
         "Launch (C),Toggle Present Windows (All desktops)"
       ];
       "kwin"."ExposeClass" = "Ctrl+F7";
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
-      "kwin"."Increase Opacity" = "none,,Increase Opacity of Active Window by 5%";
+      "kwin"."Increase Opacity" = [ ];
       "kwin"."Kill Window" = "Meta+Ctrl+Esc";
       "kwin"."Move Tablet to Next Output" = [ ];
       "kwin"."MoveMouseToCenter" = "Meta+F6";
@@ -66,7 +59,7 @@
       "kwin"."MoveZoomRight" = [ ];
       "kwin"."MoveZoomUp" = [ ];
       "kwin"."Overview" = "Meta+W";
-      "kwin"."Setup Window Shortcut" = "none,,Setup Window Shortcut";
+      "kwin"."Setup Window Shortcut" = [ ];
       "kwin"."Show Desktop" = "Meta+D";
       "kwin"."Switch One Desktop Down" = "Meta+Ctrl+Down";
       "kwin"."Switch One Desktop Up" = "Meta+Ctrl+Up";
@@ -77,141 +70,154 @@
       "kwin"."Switch Window Right" = "Meta+Alt+Right";
       "kwin"."Switch Window Up" = "Meta+Alt+Up";
       "kwin"."Switch to Desktop 1" = "Ctrl+F1";
-      "kwin"."Switch to Desktop 10" = "none,,Switch to Desktop 10";
-      "kwin"."Switch to Desktop 11" = "none,,Switch to Desktop 11";
-      "kwin"."Switch to Desktop 12" = "none,,Switch to Desktop 12";
-      "kwin"."Switch to Desktop 13" = "none,,Switch to Desktop 13";
-      "kwin"."Switch to Desktop 14" = "none,,Switch to Desktop 14";
-      "kwin"."Switch to Desktop 15" = "none,,Switch to Desktop 15";
-      "kwin"."Switch to Desktop 16" = "none,,Switch to Desktop 16";
-      "kwin"."Switch to Desktop 17" = "none,,Switch to Desktop 17";
-      "kwin"."Switch to Desktop 18" = "none,,Switch to Desktop 18";
-      "kwin"."Switch to Desktop 19" = "none,,Switch to Desktop 19";
+      "kwin"."Switch to Desktop 10" = [ ];
+      "kwin"."Switch to Desktop 11" = [ ];
+      "kwin"."Switch to Desktop 12" = [ ];
+      "kwin"."Switch to Desktop 13" = [ ];
+      "kwin"."Switch to Desktop 14" = [ ];
+      "kwin"."Switch to Desktop 15" = [ ];
+      "kwin"."Switch to Desktop 16" = [ ];
+      "kwin"."Switch to Desktop 17" = [ ];
+      "kwin"."Switch to Desktop 18" = [ ];
+      "kwin"."Switch to Desktop 19" = [ ];
       "kwin"."Switch to Desktop 2" = "Ctrl+F2";
-      "kwin"."Switch to Desktop 20" = "none,,Switch to Desktop 20";
+      "kwin"."Switch to Desktop 20" = [ ];
       "kwin"."Switch to Desktop 3" = "Ctrl+F3";
       "kwin"."Switch to Desktop 4" = "Ctrl+F4";
-      "kwin"."Switch to Desktop 5" = "none,,Switch to Desktop 5";
-      "kwin"."Switch to Desktop 6" = "none,,Switch to Desktop 6";
-      "kwin"."Switch to Desktop 7" = "none,,Switch to Desktop 7";
-      "kwin"."Switch to Desktop 8" = "none,,Switch to Desktop 8";
-      "kwin"."Switch to Desktop 9" = "none,,Switch to Desktop 9";
-      "kwin"."Switch to Next Desktop" = "none,,Switch to Next Desktop";
-      "kwin"."Switch to Next Screen" = "none,,Switch to Next Screen";
-      "kwin"."Switch to Previous Desktop" = "none,,Switch to Previous Desktop";
-      "kwin"."Switch to Previous Screen" = "none,,Switch to Previous Screen";
-      "kwin"."Switch to Screen 0" = "none,,Switch to Screen 0";
-      "kwin"."Switch to Screen 1" = "none,,Switch to Screen 1";
-      "kwin"."Switch to Screen 2" = "none,,Switch to Screen 2";
-      "kwin"."Switch to Screen 3" = "none,,Switch to Screen 3";
-      "kwin"."Switch to Screen 4" = "none,,Switch to Screen 4";
-      "kwin"."Switch to Screen 5" = "none,,Switch to Screen 5";
-      "kwin"."Switch to Screen 6" = "none,,Switch to Screen 6";
-      "kwin"."Switch to Screen 7" = "none,,Switch to Screen 7";
-      "kwin"."Switch to Screen Above" = "none,,Switch to Screen Above";
-      "kwin"."Switch to Screen Below" = "none,,Switch to Screen Below";
-      "kwin"."Switch to Screen to the Left" = "none,,Switch to Screen to the Left";
-      "kwin"."Switch to Screen to the Right" = "none,,Switch to Screen to the Right";
+      "kwin"."Switch to Desktop 5" = [ ];
+      "kwin"."Switch to Desktop 6" = [ ];
+      "kwin"."Switch to Desktop 7" = [ ];
+      "kwin"."Switch to Desktop 8" = [ ];
+      "kwin"."Switch to Desktop 9" = [ ];
+      "kwin"."Switch to Next Desktop" = [ ];
+      "kwin"."Switch to Next Screen" = [ ];
+      "kwin"."Switch to Previous Desktop" = [ ];
+      "kwin"."Switch to Previous Screen" = [ ];
+      "kwin"."Switch to Screen 0" = [ ];
+      "kwin"."Switch to Screen 1" = [ ];
+      "kwin"."Switch to Screen 2" = [ ];
+      "kwin"."Switch to Screen 3" = [ ];
+      "kwin"."Switch to Screen 4" = [ ];
+      "kwin"."Switch to Screen 5" = [ ];
+      "kwin"."Switch to Screen 6" = [ ];
+      "kwin"."Switch to Screen 7" = [ ];
+      "kwin"."Switch to Screen Above" = [ ];
+      "kwin"."Switch to Screen Below" = [ ];
+      "kwin"."Switch to Screen to the Left" = [ ];
+      "kwin"."Switch to Screen to the Right" = [ ];
       "kwin"."Toggle Night Color" = [ ];
-      "kwin"."Toggle Window Raise/Lower" = "none,,Toggle Window Raise/Lower";
-      "kwin"."Walk Through Windows" = "Alt+Tab";
-      "kwin"."Walk Through Windows (Reverse)" = "Alt+Shift+Tab";
-      "kwin"."Walk Through Windows Alternative" = "none,,Walk Through Windows Alternative";
-      "kwin"."Walk Through Windows Alternative (Reverse)" = "none,,Walk Through Windows Alternative (Reverse)";
-      "kwin"."Walk Through Windows of Current Application" = "Alt+`";
-      "kwin"."Walk Through Windows of Current Application (Reverse)" = "Alt+~";
-      "kwin"."Walk Through Windows of Current Application Alternative" = "none,,Walk Through Windows of Current Application Alternative";
-      "kwin"."Walk Through Windows of Current Application Alternative (Reverse)" = "none,,Walk Through Windows of Current Application Alternative (Reverse)";
-      "kwin"."Window Above Other Windows" = "none,,Keep Window Above Others";
-      "kwin"."Window Below Other Windows" = "none,,Keep Window Below Others";
+      "kwin"."Toggle Window Raise/Lower" = [ ];
+      "kwin"."Walk Through Windows" = [
+        "Alt+Tab,Meta+Tab"
+        "Alt+Tab,Walk Through Windows"
+      ];
+      "kwin"."Walk Through Windows (Reverse)" = [
+        "Alt+Shift+Tab,Meta+Shift+Tab"
+        "Alt+Shift+Tab,Walk Through Windows (Reverse)"
+      ];
+      "kwin"."Walk Through Windows Alternative" = ",none,Walk Through Windows Alternative";
+      "kwin"."Walk Through Windows Alternative (Reverse)" = ",none,Walk Through Windows Alternative (Reverse)";
+      "kwin"."Walk Through Windows of Current Application" = [
+        "Alt+`,Meta+`"
+        "Alt+`,Walk Through Windows of Current Application"
+      ];
+      "kwin"."Walk Through Windows of Current Application (Reverse)" = [
+        "Alt+~,Meta+~"
+        "Alt+~,Walk Through Windows of Current Application (Reverse)"
+      ];
+      "kwin"."Walk Through Windows of Current Application Alternative" = ",none,Walk Through Windows of Current Application Alternative";
+      "kwin"."Walk Through Windows of Current Application Alternative (Reverse)" = ",none,Walk Through Windows of Current Application Alternative (Reverse)";
+      "kwin"."Window Above Other Windows" = [ ];
+      "kwin"."Window Below Other Windows" = [ ];
       "kwin"."Window Close" = "Alt+F4";
-      "kwin"."Window Custom Quick Tile Bottom" = "none,,Custom Quick Tile Window to the Bottom";
-      "kwin"."Window Custom Quick Tile Left" = "none,,Custom Quick Tile Window to the Left";
-      "kwin"."Window Custom Quick Tile Right" = "none,,Custom Quick Tile Window to the Right";
-      "kwin"."Window Custom Quick Tile Top" = "none,,Custom Quick Tile Window to the Top";
-      "kwin"."Window Fullscreen" = "none,,Make Window Fullscreen";
-      "kwin"."Window Grow Horizontal" = "none,,Expand Window Horizontally";
-      "kwin"."Window Grow Vertical" = "none,,Expand Window Vertically";
-      "kwin"."Window Lower" = "none,,Lower Window";
+      "kwin"."Window Custom Quick Tile Bottom" = [ ];
+      "kwin"."Window Custom Quick Tile Left" = [ ];
+      "kwin"."Window Custom Quick Tile Right" = [ ];
+      "kwin"."Window Custom Quick Tile Top" = [ ];
+      "kwin"."Window Fullscreen" = [ ];
+      "kwin"."Window Grow Horizontal" = [ ];
+      "kwin"."Window Grow Vertical" = [ ];
+      "kwin"."Window Lower" = [ ];
       "kwin"."Window Maximize" = "Meta+PgUp";
-      "kwin"."Window Maximize Horizontal" = "none,,Maximize Window Horizontally";
-      "kwin"."Window Maximize Vertical" = "none,,Maximize Window Vertically";
+      "kwin"."Window Maximize Horizontal" = [ ];
+      "kwin"."Window Maximize Vertical" = [ ];
       "kwin"."Window Minimize" = "Meta+PgDown";
-      "kwin"."Window Move" = "none,,Move Window";
-      "kwin"."Window Move Center" = "none,,Move Window to the Center";
-      "kwin"."Window No Border" = "none,,Toggle Window Titlebar and Frame";
-      "kwin"."Window On All Desktops" = "none,,Keep Window on All Desktops";
+      "kwin"."Window Move" = [ ];
+      "kwin"."Window Move Center" = [ ];
+      "kwin"."Window No Border" = [ ];
+      "kwin"."Window On All Desktops" = [ ];
       "kwin"."Window One Desktop Down" = "Meta+Ctrl+Shift+Down";
       "kwin"."Window One Desktop Up" = "Meta+Ctrl+Shift+Up";
       "kwin"."Window One Desktop to the Left" = "Meta+Ctrl+Shift+Left";
       "kwin"."Window One Desktop to the Right" = "Meta+Ctrl+Shift+Right";
-      "kwin"."Window One Screen Down" = "none,,Move Window One Screen Down";
-      "kwin"."Window One Screen Up" = "none,,Move Window One Screen Up";
-      "kwin"."Window One Screen to the Left" = "none,,Move Window One Screen to the Left";
-      "kwin"."Window One Screen to the Right" = "none,,Move Window One Screen to the Right";
+      "kwin"."Window One Screen Down" = [ ];
+      "kwin"."Window One Screen Up" = [ ];
+      "kwin"."Window One Screen to the Left" = [ ];
+      "kwin"."Window One Screen to the Right" = [ ];
       "kwin"."Window Operations Menu" = "Alt+F3";
-      "kwin"."Window Pack Down" = "none,,Move Window Down";
-      "kwin"."Window Pack Left" = "none,,Move Window Left";
-      "kwin"."Window Pack Right" = "none,,Move Window Right";
-      "kwin"."Window Pack Up" = "none,,Move Window Up";
+      "kwin"."Window Pack Down" = [ ];
+      "kwin"."Window Pack Left" = [ ];
+      "kwin"."Window Pack Right" = [ ];
+      "kwin"."Window Pack Up" = [ ];
       "kwin"."Window Quick Tile Bottom" = "Meta+Down";
-      "kwin"."Window Quick Tile Bottom Left" = "none,,Quick Tile Window to the Bottom Left";
-      "kwin"."Window Quick Tile Bottom Right" = "none,,Quick Tile Window to the Bottom Right";
+      "kwin"."Window Quick Tile Bottom Left" = [ ];
+      "kwin"."Window Quick Tile Bottom Right" = [ ];
       "kwin"."Window Quick Tile Left" = "Meta+Left";
       "kwin"."Window Quick Tile Right" = "Meta+Right";
       "kwin"."Window Quick Tile Top" = "Meta+Up";
-      "kwin"."Window Quick Tile Top Left" = "none,,Quick Tile Window to the Top Left";
-      "kwin"."Window Quick Tile Top Right" = "none,,Quick Tile Window to the Top Right";
-      "kwin"."Window Raise" = "none,,Raise Window";
-      "kwin"."Window Resize" = "none,,Resize Window";
-      "kwin"."Window Shade" = "none,,Shade Window";
-      "kwin"."Window Shrink Horizontal" = "none,,Shrink Window Horizontally";
-      "kwin"."Window Shrink Vertical" = "none,,Shrink Window Vertically";
-      "kwin"."Window to Desktop 1" = "none,,Window to Desktop 1";
-      "kwin"."Window to Desktop 10" = "none,,Window to Desktop 10";
-      "kwin"."Window to Desktop 11" = "none,,Window to Desktop 11";
-      "kwin"."Window to Desktop 12" = "none,,Window to Desktop 12";
-      "kwin"."Window to Desktop 13" = "none,,Window to Desktop 13";
-      "kwin"."Window to Desktop 14" = "none,,Window to Desktop 14";
-      "kwin"."Window to Desktop 15" = "none,,Window to Desktop 15";
-      "kwin"."Window to Desktop 16" = "none,,Window to Desktop 16";
-      "kwin"."Window to Desktop 17" = "none,,Window to Desktop 17";
-      "kwin"."Window to Desktop 18" = "none,,Window to Desktop 18";
-      "kwin"."Window to Desktop 19" = "none,,Window to Desktop 19";
-      "kwin"."Window to Desktop 2" = "none,,Window to Desktop 2";
-      "kwin"."Window to Desktop 20" = "none,,Window to Desktop 20";
-      "kwin"."Window to Desktop 3" = "none,,Window to Desktop 3";
-      "kwin"."Window to Desktop 4" = "none,,Window to Desktop 4";
-      "kwin"."Window to Desktop 5" = "none,,Window to Desktop 5";
-      "kwin"."Window to Desktop 6" = "none,,Window to Desktop 6";
-      "kwin"."Window to Desktop 7" = "none,,Window to Desktop 7";
-      "kwin"."Window to Desktop 8" = "none,,Window to Desktop 8";
-      "kwin"."Window to Desktop 9" = "none,,Window to Desktop 9";
-      "kwin"."Window to Next Desktop" = "none,,Window to Next Desktop";
+      "kwin"."Window Quick Tile Top Left" = [ ];
+      "kwin"."Window Quick Tile Top Right" = [ ];
+      "kwin"."Window Raise" = [ ];
+      "kwin"."Window Resize" = [ ];
+      "kwin"."Window Shade" = [ ];
+      "kwin"."Window Shrink Horizontal" = [ ];
+      "kwin"."Window Shrink Vertical" = [ ];
+      "kwin"."Window to Desktop 1" = [ ];
+      "kwin"."Window to Desktop 10" = [ ];
+      "kwin"."Window to Desktop 11" = [ ];
+      "kwin"."Window to Desktop 12" = [ ];
+      "kwin"."Window to Desktop 13" = [ ];
+      "kwin"."Window to Desktop 14" = [ ];
+      "kwin"."Window to Desktop 15" = [ ];
+      "kwin"."Window to Desktop 16" = [ ];
+      "kwin"."Window to Desktop 17" = [ ];
+      "kwin"."Window to Desktop 18" = [ ];
+      "kwin"."Window to Desktop 19" = [ ];
+      "kwin"."Window to Desktop 2" = [ ];
+      "kwin"."Window to Desktop 20" = [ ];
+      "kwin"."Window to Desktop 3" = [ ];
+      "kwin"."Window to Desktop 4" = [ ];
+      "kwin"."Window to Desktop 5" = [ ];
+      "kwin"."Window to Desktop 6" = [ ];
+      "kwin"."Window to Desktop 7" = [ ];
+      "kwin"."Window to Desktop 8" = [ ];
+      "kwin"."Window to Desktop 9" = [ ];
+      "kwin"."Window to Next Desktop" = [ ];
       "kwin"."Window to Next Screen" = "Meta+Shift+Right";
-      "kwin"."Window to Previous Desktop" = "none,,Window to Previous Desktop";
+      "kwin"."Window to Previous Desktop" = [ ];
       "kwin"."Window to Previous Screen" = "Meta+Shift+Left";
-      "kwin"."Window to Screen 0" = "none,,Move Window to Screen 0";
-      "kwin"."Window to Screen 1" = "none,,Move Window to Screen 1";
-      "kwin"."Window to Screen 2" = "none,,Move Window to Screen 2";
-      "kwin"."Window to Screen 3" = "none,,Move Window to Screen 3";
-      "kwin"."Window to Screen 4" = "none,,Move Window to Screen 4";
-      "kwin"."Window to Screen 5" = "none,,Move Window to Screen 5";
-      "kwin"."Window to Screen 6" = "none,,Move Window to Screen 6";
-      "kwin"."Window to Screen 7" = "none,,Move Window to Screen 7";
+      "kwin"."Window to Screen 0" = [ ];
+      "kwin"."Window to Screen 1" = [ ];
+      "kwin"."Window to Screen 2" = [ ];
+      "kwin"."Window to Screen 3" = [ ];
+      "kwin"."Window to Screen 4" = [ ];
+      "kwin"."Window to Screen 5" = [ ];
+      "kwin"."Window to Screen 6" = [ ];
+      "kwin"."Window to Screen 7" = [ ];
       "kwin"."disableInputCapture" = "Meta+Shift+Esc";
       "kwin"."view_actual_size" = "Meta+0";
       "kwin"."view_zoom_in" = [
         "Meta++"
-        "Meta+=,Meta++"
+        ""
+        "Meta+=\\, Zoom In,Meta++"
         "Meta+=,Zoom In"
       ];
       "kwin"."view_zoom_out" = "Meta+-";
-      "mediacontrol"."mediavolumedown" = "none,,Media volume down";
-      "mediacontrol"."mediavolumeup" = "none,,Media volume up";
+      "mediacontrol"."mediavolumedown" = [ ];
+      "mediacontrol"."mediavolumeup" = [ ];
       "mediacontrol"."nextmedia" = "Media Next";
       "mediacontrol"."pausemedia" = "Media Pause";
-      "mediacontrol"."playmedia" = "none,,Play media playback";
+      "mediacontrol"."playmedia" = [ ];
       "mediacontrol"."playpausemedia" = "Media Play";
       "mediacontrol"."previousmedia" = "Media Previous";
       "mediacontrol"."stopmedia" = "Media Stop";
@@ -229,16 +235,18 @@
       "org_kde_powerdevil"."Turn Off Screen" = [ ];
       "org_kde_powerdevil"."powerProfile" = [
         "Battery"
-        "Meta+B,Battery"
+        ""
+        "Meta+B\\, ,Battery"
         "Meta+B,Switch Power Profile"
       ];
       "plasmashell"."activate application launcher" = [
         "Meta"
-        "Alt+F1,Meta"
+        ""
+        "Alt+F1\\, ,Meta"
         "Alt+F1,Activate Application Launcher"
       ];
       "plasmashell"."activate task manager entry 1" = "Meta+1";
-      "plasmashell"."activate task manager entry 10" = "none,,Activate Task Manager Entry 10";
+      "plasmashell"."activate task manager entry 10" = [ ];
       "plasmashell"."activate task manager entry 2" = "Meta+2";
       "plasmashell"."activate task manager entry 3" = "Meta+3";
       "plasmashell"."activate task manager entry 4" = "Meta+4";
@@ -247,39 +255,205 @@
       "plasmashell"."activate task manager entry 7" = "Meta+7";
       "plasmashell"."activate task manager entry 8" = "Meta+8";
       "plasmashell"."activate task manager entry 9" = "Meta+9";
-      "plasmashell"."clear-history" = "none,,Clear Clipboard History";
+      "plasmashell"."clear-history" = [ ];
       "plasmashell"."clipboard_action" = "Meta+Ctrl+X";
       "plasmashell"."cycle-panels" = "Meta+Alt+P";
-      "plasmashell"."cycleNextAction" = "none,,Next History Item";
-      "plasmashell"."cyclePrevAction" = "none,,Previous History Item";
+      "plasmashell"."cycleNextAction" = [ ];
+      "plasmashell"."cyclePrevAction" = [ ];
+      "plasmashell"."edit_clipboard" = [ ];
       "plasmashell"."manage activities" = "Meta+Q";
-      "plasmashell"."next activity" = "Meta+A,none,Walk through activities";
-      "plasmashell"."previous activity" = "Meta+Shift+A,none,Walk through activities (Reverse)";
-      "plasmashell"."repeat_action" = "none,,Manually Invoke Action on Current Clipboard";
+      "plasmashell"."next activity" = ",none,Walk through activities";
+      "plasmashell"."previous activity" = ",none,Walk through activities (Reverse)";
+      "plasmashell"."repeat_action" = [ ];
       "plasmashell"."show dashboard" = "Ctrl+F12";
-      "plasmashell"."show-barcode" = "none,,Show Barcode…";
+      "plasmashell"."show-barcode" = [ ];
       "plasmashell"."show-on-mouse-pos" = "Meta+V";
       "plasmashell"."stop current activity" = "Meta+S";
-      "plasmashell"."switch to next activity" = "none,,Switch to Next Activity";
-      "plasmashell"."switch to previous activity" = "none,,Switch to Previous Activity";
-      "plasmashell"."toggle do not disturb" = "none,,Toggle do not disturb";
+      "plasmashell"."switch to next activity" = [ ];
+      "plasmashell"."switch to previous activity" = [ ];
+      "plasmashell"."toggle do not disturb" = [ ];
       "services/kitty.desktop"."_launch" = "Ctrl+Alt+T";
       "services/net.local.flameshot.desktop"."_launch" = "Ctrl+Print";
       "services/org.kde.konsole.desktop"."_launch" = [ ];
+      "services/org.kde.spectacle.desktop"."RecordRegion" = [ ];
+      "services/org.kde.spectacle.desktop"."WindowUnderCursorScreenShot" = [ ];
+      "services/org.kde.touchpadshortcuts.desktop"."ToggleTouchpad" = [
+        "Touchpad Toggle"
+        "Meta+Ctrl+Touchpad Toggle"
+        ""
+        ""
+        ""
+        "Meta+Ctrl+Zenkaku Hankaku"
+      ];
     };
     configFile = {
       "baloofilerc"."General"."dbVersion" = 2;
       "baloofilerc"."General"."exclude filters" = "*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,cmake_install.cmake,CMakeCache.txt,CTestTestfile.cmake,libtool,config.status,confdefs.h,autom4te,conftest,confstat,Makefile.am,*.gcode,.ninja_deps,.ninja_log,build.ninja,*.csproj,*.m4,*.rej,*.gmo,*.pc,*.omf,*.aux,*.tmp,*.po,*.vm*,*.nvram,*.rcore,*.swp,*.swap,lzo,litmain.sh,*.orig,.histfile.*,.xsession-errors*,*.map,*.so,*.a,*.db,*.qrc,*.ini,*.init,*.img,*.vdi,*.vbox*,vbox.log,*.qcow2,*.vmdk,*.vhd,*.vhdx,*.sql,*.sql.gz,*.ytdl,*.tfstate*,*.class,*.pyc,*.pyo,*.elc,*.qmlc,*.jsc,*.fastq,*.fq,*.gb,*.fasta,*.fna,*.gbff,*.faa,po,CVS,.svn,.git,_darcs,.bzr,.hg,CMakeFiles,CMakeTmp,CMakeTmpQmake,.moc,.obj,.pch,.uic,.npm,.yarn,.yarn-cache,__pycache__,node_modules,node_packages,nbproject,.terraform,.venv,venv,core-dumps,lost+found";
       "baloofilerc"."General"."exclude filters version" = 9;
+      "dolphinrc"."General"."ViewPropsTimestamp" = "2025,6,13,23,3,58.998";
+      "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize" = false;
+      "dolphinrc"."KFileDialog Settings"."Places Icons Static Size" = 22;
       "kactivitymanagerdrc"."activities"."bfe40342-c685-4df5-be34-3dc63cdaa255" = "Default";
       "kactivitymanagerdrc"."main"."currentActivity" = "bfe40342-c685-4df5-be34-3dc63cdaa255";
+      "kactivitymanagerdrc"."main"."runningActivities" = "bfe40342-c685-4df5-be34-3dc63cdaa255";
+      "kactivitymanagerdrc"."main"."stoppedActivities" = "";
+      "katerc"."General"."Allow Tab Scrolling" = true;
+      "katerc"."General"."Auto Hide Tabs" = false;
+      "katerc"."General"."Close After Last" = false;
+      "katerc"."General"."Close documents with window" = true;
+      "katerc"."General"."Cycle To First Tab" = true;
       "katerc"."General"."Days Meta Infos" = 30;
+      "katerc"."General"."Diagnostics Limit" = 12000;
+      "katerc"."General"."Diff Show Style" = 0;
+      "katerc"."General"."Elide Tab Text" = false;
+      "katerc"."General"."Enable Context ToolView" = false;
+      "katerc"."General"."Expand Tabs" = false;
+      "katerc"."General"."Icon size for left and right sidebar buttons" = 32;
+      "katerc"."General"."Modified Notification" = false;
+      "katerc"."General"."Mouse back button action" = 0;
+      "katerc"."General"."Mouse forward button action" = 0;
+      "katerc"."General"."Open New Tab To The Right Of Current" = false;
+      "katerc"."General"."Output History Limit" = 100;
+      "katerc"."General"."Output With Date" = false;
+      "katerc"."General"."Quickopen Filter Mode" = 0;
+      "katerc"."General"."Quickopen List Mode" = true;
+      "katerc"."General"."Recent File List Entry Count" = 10;
+      "katerc"."General"."Restore Window Configuration" = true;
+      "katerc"."General"."SDI Mode" = false;
       "katerc"."General"."Save Meta Infos" = true;
       "katerc"."General"."Show Full Path in Title" = false;
       "katerc"."General"."Show Menu Bar" = true;
       "katerc"."General"."Show Status Bar" = true;
+      "katerc"."General"."Show Symbol In Navigation Bar" = true;
       "katerc"."General"."Show Tab Bar" = true;
+      "katerc"."General"."Show Tabs Close Button" = true;
       "katerc"."General"."Show Url Nav Bar" = true;
+      "katerc"."General"."Show output view for message type" = 1;
+      "katerc"."General"."Show text for left and right sidebar" = false;
+      "katerc"."General"."Show welcome view for new window" = true;
+      "katerc"."General"."Startup Session" = "manual";
+      "katerc"."General"."Stash new unsaved files" = true;
+      "katerc"."General"."Stash unsaved file changes" = false;
+      "katerc"."General"."Sync section size with tab positions" = false;
+      "katerc"."General"."Tab Double Click New Document" = true;
+      "katerc"."General"."Tab Middle Click Close Document" = true;
+      "katerc"."General"."Tabbar Tab Limit" = 0;
+      "katerc"."KTextEditor Document"."Allow End of Line Detection" = true;
+      "katerc"."KTextEditor Document"."Auto Detect Indent" = true;
+      "katerc"."KTextEditor Document"."Auto Reload If State Is In Version Control" = true;
+      "katerc"."KTextEditor Document"."Auto Save" = false;
+      "katerc"."KTextEditor Document"."Auto Save Interval" = 0;
+      "katerc"."KTextEditor Document"."Auto Save On Focus Out" = false;
+      "katerc"."KTextEditor Document"."BOM" = false;
+      "katerc"."KTextEditor Document"."Backup Local" = true;
+      "katerc"."KTextEditor Document"."Backup Prefix" = "";
+      "katerc"."KTextEditor Document"."Backup Remote" = false;
+      "katerc"."KTextEditor Document"."Backup Suffix" = "~";
+      "katerc"."KTextEditor Document"."Camel Cursor" = true;
+      "katerc"."KTextEditor Document"."Encoding" = "UTF-8";
+      "katerc"."KTextEditor Document"."End of Line" = 0;
+      "katerc"."KTextEditor Document"."Indent On Backspace" = true;
+      "katerc"."KTextEditor Document"."Indent On Tab" = true;
+      "katerc"."KTextEditor Document"."Indent On Text Paste" = true;
+      "katerc"."KTextEditor Document"."Indentation Mode" = "normal";
+      "katerc"."KTextEditor Document"."Indentation Width" = 4;
+      "katerc"."KTextEditor Document"."Keep Extra Spaces" = false;
+      "katerc"."KTextEditor Document"."Line Length Limit" = 10000;
+      "katerc"."KTextEditor Document"."Newline at End of File" = true;
+      "katerc"."KTextEditor Document"."On-The-Fly Spellcheck" = false;
+      "katerc"."KTextEditor Document"."Overwrite Mode" = false;
+      "katerc"."KTextEditor Document"."PageUp/PageDown Moves Cursor" = false;
+      "katerc"."KTextEditor Document"."Remove Spaces" = 1;
+      "katerc"."KTextEditor Document"."ReplaceTabsDyn" = true;
+      "katerc"."KTextEditor Document"."Show Spaces" = 0;
+      "katerc"."KTextEditor Document"."Show Tabs" = true;
+      "katerc"."KTextEditor Document"."Smart Home" = true;
+      "katerc"."KTextEditor Document"."Swap Directory" = "";
+      "katerc"."KTextEditor Document"."Swap File Mode" = 1;
+      "katerc"."KTextEditor Document"."Swap Sync Interval" = 15;
+      "katerc"."KTextEditor Document"."Tab Handling" = 2;
+      "katerc"."KTextEditor Document"."Tab Width" = 2;
+      "katerc"."KTextEditor Document"."Trailing Marker Size" = 1;
+      "katerc"."KTextEditor Document"."Use Editor Config" = true;
+      "katerc"."KTextEditor Document"."Word Wrap" = false;
+      "katerc"."KTextEditor Document"."Word Wrap Column" = 80;
+      "katerc"."KTextEditor Editor"."Encoding Prober Type" = 1;
+      "katerc"."KTextEditor Editor"."Fallback Encoding" = "ISO 8859-6";
+      "katerc"."KTextEditor Renderer"."Animate Bracket Matching" = false;
+      "katerc"."KTextEditor Renderer"."Auto Color Theme Selection" = false;
+      "katerc"."KTextEditor Renderer"."Color Theme" = "Catppuccin Mocha";
+      "katerc"."KTextEditor Renderer"."Line Height Multiplier" = 1;
+      "katerc"."KTextEditor Renderer"."Show Indentation Lines" = false;
+      "katerc"."KTextEditor Renderer"."Show Whole Bracket Expression" = false;
+      "katerc"."KTextEditor Renderer"."Text Font" = "CaskaydiaMono Nerd Font Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
+      "katerc"."KTextEditor Renderer"."Text Font Features" = "";
+      "katerc"."KTextEditor Renderer"."Word Wrap Marker" = false;
+      "katerc"."KTextEditor View"."Allow Mark Menu" = true;
+      "katerc"."KTextEditor View"."Auto Brackets" = true;
+      "katerc"."KTextEditor View"."Auto Center Lines" = 0;
+      "katerc"."KTextEditor View"."Auto Completion" = true;
+      "katerc"."KTextEditor View"."Auto Completion Preselect First Entry" = true;
+      "katerc"."KTextEditor View"."Backspace Remove Composed Characters" = false;
+      "katerc"."KTextEditor View"."Bookmark Menu Sorting" = 0;
+      "katerc"."KTextEditor View"."Bracket Match Preview" = false;
+      "katerc"."KTextEditor View"."Chars To Enclose Selection" = "<>(){}[]'\"";
+      "katerc"."KTextEditor View"."Cycle Through Bookmarks" = true;
+      "katerc"."KTextEditor View"."Default Mark Type" = 1;
+      "katerc"."KTextEditor View"."Dynamic Word Wrap" = true;
+      "katerc"."KTextEditor View"."Dynamic Word Wrap Align Indent" = 80;
+      "katerc"."KTextEditor View"."Dynamic Word Wrap At Static Marker" = false;
+      "katerc"."KTextEditor View"."Dynamic Word Wrap Indicators" = 1;
+      "katerc"."KTextEditor View"."Dynamic Wrap not at word boundaries" = false;
+      "katerc"."KTextEditor View"."Enable Accessibility" = true;
+      "katerc"."KTextEditor View"."Enable Tab completion" = false;
+      "katerc"."KTextEditor View"."Enter To Insert Completion" = true;
+      "katerc"."KTextEditor View"."Fold First Line" = false;
+      "katerc"."KTextEditor View"."Folding Bar" = true;
+      "katerc"."KTextEditor View"."Folding Preview" = true;
+      "katerc"."KTextEditor View"."Icon Bar" = false;
+      "katerc"."KTextEditor View"."Input Mode" = 0;
+      "katerc"."KTextEditor View"."Keyword Completion" = true;
+      "katerc"."KTextEditor View"."Line Modification" = true;
+      "katerc"."KTextEditor View"."Line Numbers" = true;
+      "katerc"."KTextEditor View"."Max Clipboard History Entries" = 20;
+      "katerc"."KTextEditor View"."Maximum Search History Size" = 100;
+      "katerc"."KTextEditor View"."Mouse Paste At Cursor Position" = false;
+      "katerc"."KTextEditor View"."Multiple Cursor Modifier" = 134217728;
+      "katerc"."KTextEditor View"."Persistent Selection" = false;
+      "katerc"."KTextEditor View"."Scroll Bar Marks" = false;
+      "katerc"."KTextEditor View"."Scroll Bar Mini Map All" = true;
+      "katerc"."KTextEditor View"."Scroll Bar Mini Map Width" = 60;
+      "katerc"."KTextEditor View"."Scroll Bar MiniMap" = true;
+      "katerc"."KTextEditor View"."Scroll Bar Preview" = true;
+      "katerc"."KTextEditor View"."Scroll Past End" = false;
+      "katerc"."KTextEditor View"."Search/Replace Flags" = 140;
+      "katerc"."KTextEditor View"."Shoe Line Ending Type in Statusbar" = true;
+      "katerc"."KTextEditor View"."Show Documentation With Completion" = true;
+      "katerc"."KTextEditor View"."Show File Encoding" = true;
+      "katerc"."KTextEditor View"."Show Folding Icons On Hover Only" = true;
+      "katerc"."KTextEditor View"."Show Line Count" = false;
+      "katerc"."KTextEditor View"."Show Scrollbars" = 0;
+      "katerc"."KTextEditor View"."Show Statusbar Dictionary" = true;
+      "katerc"."KTextEditor View"."Show Statusbar Highlighting Mode" = true;
+      "katerc"."KTextEditor View"."Show Statusbar Input Mode" = true;
+      "katerc"."KTextEditor View"."Show Statusbar Line Column" = true;
+      "katerc"."KTextEditor View"."Show Statusbar Tab Settings" = true;
+      "katerc"."KTextEditor View"."Show Word Count" = false;
+      "katerc"."KTextEditor View"."Smart Copy Cut" = true;
+      "katerc"."KTextEditor View"."Statusbar Line Column Compact Mode" = true;
+      "katerc"."KTextEditor View"."Text Drag And Drop" = true;
+      "katerc"."KTextEditor View"."User Sets Of Chars To Enclose Selection" = "";
+      "katerc"."KTextEditor View"."Vi Input Mode Steal Keys" = false;
+      "katerc"."KTextEditor View"."Vi Relative Line Numbers" = false;
+      "katerc"."KTextEditor View"."Word Completion" = true;
+      "katerc"."KTextEditor View"."Word Completion Minimal Word Length" = 3;
+      "katerc"."KTextEditor View"."Word Completion Remove Tail" = true;
+      "katerc"."Konsole"."AutoSyncronizeMode" = 0;
+      "katerc"."Konsole"."KonsoleEscKeyBehaviour" = true;
+      "katerc"."Konsole"."KonsoleEscKeyExceptions" = "vi,vim,nvim,git";
+      "katerc"."Konsole"."RemoveExtension" = false;
+      "katerc"."Konsole"."RunPrefix" = "";
+      "katerc"."Konsole"."SetEditor" = false;
       "katerc"."filetree"."editShade" = "31,81,106";
       "katerc"."filetree"."listMode" = false;
       "katerc"."filetree"."middleClickToClose" = false;
@@ -289,6 +463,28 @@
       "katerc"."filetree"."showToolbar" = true;
       "katerc"."filetree"."sortRole" = 0;
       "katerc"."filetree"."viewShade" = "81,49,95";
+      "katerc"."lspclient"."AllowedServerCommandLines" = "/run/current-system/sw/bin/marksman server";
+      "katerc"."lspclient"."AutoHover" = true;
+      "katerc"."lspclient"."AutoImport" = true;
+      "katerc"."lspclient"."BlockedServerCommandLines" = "";
+      "katerc"."lspclient"."CompletionDocumentation" = true;
+      "katerc"."lspclient"."CompletionParens" = true;
+      "katerc"."lspclient"."Diagnostics" = true;
+      "katerc"."lspclient"."FormatOnSave" = false;
+      "katerc"."lspclient"."HighlightGoto" = true;
+      "katerc"."lspclient"."IncrementalSync" = false;
+      "katerc"."lspclient"."InlayHints" = false;
+      "katerc"."lspclient"."Messages" = true;
+      "katerc"."lspclient"."ReferencesDeclaration" = true;
+      "katerc"."lspclient"."SemanticHighlighting" = true;
+      "katerc"."lspclient"."ServerConfiguration" = "";
+      "katerc"."lspclient"."ShowCompletions" = true;
+      "katerc"."lspclient"."SignatureHelp" = true;
+      "katerc"."lspclient"."SymbolDetails" = false;
+      "katerc"."lspclient"."SymbolExpand" = true;
+      "katerc"."lspclient"."SymbolSort" = false;
+      "katerc"."lspclient"."SymbolTree" = true;
+      "katerc"."lspclient"."TypeFormatting" = false;
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
       "kded5rc"."Module-device_automounter"."autoload" = false;
       "kdeglobals"."KFileDialog Settings"."Allow Expansion" = false;
@@ -309,19 +505,26 @@
       "kdeglobals"."KFileDialog Settings"."Sort reversed" = false;
       "kdeglobals"."KFileDialog Settings"."Speedbar Width" = 140;
       "kdeglobals"."KFileDialog Settings"."View Style" = "DetailTree";
-      "kdeglobals"."WM"."activeBackground" = "49,54,59";
+      "kdeglobals"."WM"."activeBackground" = "39,44,49";
       "kdeglobals"."WM"."activeBlend" = "252,252,252";
       "kdeglobals"."WM"."activeForeground" = "252,252,252";
-      "kdeglobals"."WM"."inactiveBackground" = "42,46,50";
+      "kdeglobals"."WM"."inactiveBackground" = "32,36,40";
       "kdeglobals"."WM"."inactiveBlend" = "161,169,177";
       "kdeglobals"."WM"."inactiveForeground" = "161,169,177";
+      "ksmserverrc"."SubSession: 35c32e83-b51f-4c47-9962-616e4775e5de"."count" = 0;
       "kwalletrc"."Wallet"."First Use" = false;
       "kwinrc"."Desktops"."Id_1" = "eab75afc-ecc6-4989-b764-11ae94cc7da4";
       "kwinrc"."Desktops"."Number" = 1;
       "kwinrc"."Desktops"."Rows" = 1;
+      "kwinrc"."SubSession: 35c32e83-b51f-4c47-9962-616e4775e5de"."active" = "-1";
+      "kwinrc"."SubSession: 35c32e83-b51f-4c47-9962-616e4775e5de"."count" = 0;
       "kwinrc"."Tiling"."padding" = 4;
-      "kwinrc"."Tiling/1490a0a1-67c0-5542-8d27-47390c9a3fe9"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
-      "kwinrc"."Tiling/ad4b1204-280e-5bd7-b9dd-3dacec732401"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/1490a0a1-67c0-5542-8d27-47390c9a3fe9"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
+      "kwinrc"."Tiling/6737f743-aacf-5fa1-8d39-6d9db9fa49e4"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/ad4b1204-280e-5bd7-b9dd-3dacec732401"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
+      "kwinrc"."Tiling/d23fa176-bd35-574a-88b8-efd5544db1b0"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/eab75afc-ecc6-4989-b764-11ae94cc7da4/4e3d50b2-3413-48ca-8eee-5ad1e0aa7c6f"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/eab75afc-ecc6-4989-b764-11ae94cc7da4/b6bec9ec-41a9-4fb3-9497-3dfdc9e3b710"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Xwayland"."Scale" = 1;
       "kwinrulesrc"."General"."count" = 1;
       "kwinrulesrc"."General"."rules" = "c9bca41f-1b21-4df3-a1d4-2f33f894f745";
@@ -345,7 +548,142 @@
       "spectaclerc"."VideoSave"."translatedScreencastsFolder" = "Screencasts";
     };
     dataFile = {
-
+      "kate/anonymous.katesession"."Document 0"."URL" = "file:///home/jaan/notes/game-notes.md";
+      "kate/anonymous.katesession"."Kate Plugins"."cmaketoolsplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."compilerexplorer" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."eslintplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."externaltoolsplugin" = true;
+      "kate/anonymous.katesession"."Kate Plugins"."formatplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katebacktracebrowserplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katebuildplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katecloseexceptplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katecolorpickerplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katectagsplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katefilebrowserplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katefiletreeplugin" = true;
+      "kate/anonymous.katesession"."Kate Plugins"."kategdbplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."kategitblameplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katekonsoleplugin" = true;
+      "kate/anonymous.katesession"."Kate Plugins"."kateprojectplugin" = true;
+      "kate/anonymous.katesession"."Kate Plugins"."katereplicodeplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katesearchplugin" = true;
+      "kate/anonymous.katesession"."Kate Plugins"."katesnippetsplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katesqlplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katesymbolviewerplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katexmlcheckplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."katexmltoolsplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."keyboardmacrosplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."ktexteditorpreviewplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."latexcompletionplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."lspclientplugin" = true;
+      "kate/anonymous.katesession"."Kate Plugins"."openlinkplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."rainbowparens" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."rbqlplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."tabswitcherplugin" = true;
+      "kate/anonymous.katesession"."Kate Plugins"."templateplugin" = false;
+      "kate/anonymous.katesession"."Kate Plugins"."textfilterplugin" = true;
+      "kate/anonymous.katesession"."MainWindow0"."Active ViewSpace" = 0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-H-Splitter" = "0,1097,0";
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-0-Bar-0-TvList" = "kate_private_plugin_katefiletreeplugin,kateproject,kateprojectgit,lspclient_symbol_outline";
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-0-LastSize" = 200;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-0-SectSizes" = 0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-0-Splitter" = 530;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-1-Bar-0-TvList" = "";
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-1-LastSize" = 200;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-1-SectSizes" = 0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-1-Splitter" = 530;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-2-Bar-0-TvList" = "";
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-2-LastSize" = 200;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-2-SectSizes" = 0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-2-Splitter" = 1097;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-3-Bar-0-TvList" = "output,diagnostics,kate_plugin_katesearch,kateprojectinfo,kate_private_plugin_katekonsoleplugin";
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-3-LastSize" = 204;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-3-SectSizes" = 0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-3-Splitter" = 759;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-Style" = 2;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-Sidebar-Visible" = true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-diagnostics-Position" = 3;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-diagnostics-Show-Button-In-Sidebar" =
+        true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-diagnostics-Visible" = false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_plugin_katesearch-Position" = 3;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_plugin_katesearch-Show-Button-In-Sidebar" =
+        true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_plugin_katesearch-Visible" =
+        false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Position" =
+        0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Show-Button-In-Sidebar" =
+        true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Visible" =
+        false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Position" =
+        3;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Show-Button-In-Sidebar" =
+        true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Visible" =
+        false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateproject-Position" = 0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateproject-Show-Button-In-Sidebar" =
+        true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateproject-Visible" = false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateprojectgit-Position" = 0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateprojectgit-Show-Button-In-Sidebar" =
+        false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateprojectgit-Visible" = false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateprojectinfo-Position" = 3;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateprojectinfo-Show-Button-In-Sidebar" =
+        true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-kateprojectinfo-Visible" = false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-lspclient_symbol_outline-Position" =
+        0;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-lspclient_symbol_outline-Show-Button-In-Sidebar" =
+        true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-lspclient_symbol_outline-Visible" =
+        false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-output-Position" = 3;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-output-Show-Button-In-Sidebar" = true;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-ToolView-output-Visible" = false;
+      "kate/anonymous.katesession"."MainWindow0"."Kate-MDI-V-Splitter" = "0,530,0";
+      "kate/anonymous.katesession"."MainWindow0 Settings"."WindowState" = 8;
+      "kate/anonymous.katesession"."MainWindow0-Splitter 0"."Children" = "MainWindow0-ViewSpace 0";
+      "kate/anonymous.katesession"."MainWindow0-Splitter 0"."Orientation" = 1;
+      "kate/anonymous.katesession"."MainWindow0-Splitter 0"."Sizes" = 1097;
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0"."Active View" = 0;
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0"."Count" = 1;
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0"."Documents" = 0;
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0"."View 0" = 0;
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0 0"."CursorColumn" = 70;
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0 0"."CursorLine" = 130;
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0 0"."ScrollLine" = 114;
+      "kate/anonymous.katesession"."Open Documents"."Count" = 1;
+      "kate/anonymous.katesession"."Open MainWindows"."Count" = 1;
+      "kate/anonymous.katesession"."Plugin:kateprojectplugin:"."projects" = "";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."BinaryFiles" = false;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."CurrentExcludeFilter" = "-1";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."CurrentFilter" = "-1";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."ExcludeFilters" = "";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."ExpandSearchResults" = false;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."Filters" = "";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."FollowSymLink" = false;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."HiddenFiles" = false;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."MatchCase" = false;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."Place" = 1;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."Recursive" = true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."Replaces" = "";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."Search" = "";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SearchAsYouTypeAllProjects" =
+        true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SearchAsYouTypeCurrentFile" =
+        true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SearchAsYouTypeFolder" = true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SearchAsYouTypeOpenFiles" =
+        true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SearchAsYouTypeProject" = true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SearchDiskFiles" = "";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SearchDiskFiless" = "";
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."SizeLimit" = 128;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0"."UseRegExp" = false;
     };
   };
 }

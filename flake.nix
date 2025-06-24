@@ -71,7 +71,10 @@
           hooks = {
             nixfmt-rfc-style = {
               enable = true;
-              excludes = [ "hardware-configuration\\.nix$" ];
+              excludes = [
+                "hardware-configuration\\.nix$"
+                "plasma\\.nix$"
+              ];
             };
           };
         };
