@@ -39,6 +39,9 @@
       dates = lib.mkDefault "weekly";
       options = lib.mkDefault "--delete-older-than 7d";
     };
+    optimise = {
+      automatic = lib.mkDefault true;
+    };
     settings.experimental-features = [
       "nix-command"
       "flakes"
