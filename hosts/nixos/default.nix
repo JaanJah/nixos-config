@@ -49,7 +49,11 @@
     tree
     unzip
 
+    # https://github.com/0xAX/asm
     gnumake
+    nasm
+    binutils
+    libgcc
 
     # Wine stuff
     wineWowPackages.stable
