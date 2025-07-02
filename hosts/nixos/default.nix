@@ -40,8 +40,8 @@
   };
 
   environment.systemPackages = with pkgs; [
+    bc
     bitwarden-desktop
-
     nixfmt-rfc-style
     ncdu
     kitty
