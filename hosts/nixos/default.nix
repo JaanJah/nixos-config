@@ -39,32 +39,35 @@
     #libraries = with pkgs; [];
   };
 
-  environment.systemPackages = with pkgs; [
-    bc
-    bitwarden-desktop
-    nixfmt-rfc-style
-    ncdu
-    kitty
-    spotify
-    tree
-    unzip
+  environment = {
+    localBinInPath = true;
+    systemPackages = with pkgs; [
+      bc
+      bitwarden-desktop
+      nixfmt-rfc-style
+      ncdu
+      kitty
+      spotify
+      tree
+      unzip
 
-    # https://github.com/0xAX/asm
-    gnumake
-    nasm
-    binutils
-    libgcc
+      # https://github.com/0xAX/asm
+      gnumake
+      nasm
+      binutils
+      libgcc
 
-    # Markdown language server
-    marksman
+      # Markdown language server
+      marksman
 
-    # Wine stuff
-    wineWowPackages.stable
-    winetricks
+      # Wine stuff
+      wineWowPackages.stable
+      winetricks
 
-    kdePackages.kate
-    kdePackages.okular
-  ];
+      kdePackages.kate
+      kdePackages.okular
+    ];
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

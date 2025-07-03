@@ -13,6 +13,7 @@
     ./nixcord.nix
     ./plasma.nix
     ./thunderbird.nix
+    ./uv.nix
     ./vim.nix
   ];
 }
