@@ -11,6 +11,7 @@
     ./kitty.nix
     ./nix-index.nix
     ./nixcord.nix
+    ./obs-studio.nix
     ./plasma.nix
     ./thunderbird.nix
     ./uv.nix
