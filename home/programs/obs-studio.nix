@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 # https://wiki.nixos.org/w/index.php?title=OBS_Studio
 {
   programs.obs-studio = {
