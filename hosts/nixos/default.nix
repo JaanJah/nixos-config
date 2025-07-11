@@ -12,6 +12,7 @@
     ../../modules/boot.nix
     ../../modules/network.nix
     #../../modules/nvidia.nix
+    ../../modules/openvpn.nix
     ../../modules/podman.nix
     #../../modules/printer.nix
     ../../modules/system.nix
@@ -47,6 +48,7 @@
       nixfmt-rfc-style
       ncdu
       kitty
+      openvpn
       spotify
       tree
       unzip
