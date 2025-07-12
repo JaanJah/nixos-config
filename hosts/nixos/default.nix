@@ -53,6 +53,9 @@
       tree
       unzip
 
+      # For running FFXIV
+      xivlauncher
+
       # https://github.com/0xAX/asm
       gnumake
       nasm
