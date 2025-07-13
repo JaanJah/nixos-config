@@ -9,5 +9,9 @@
       config = ''config /etc/nixos/openvpn/cyberghost-sweden/openvpn.ovpn '';
       autoStart = false;
     };
+    cyberghost-usa = {
+      config = ''config /etc/nixos/openvpn/cyberghost-usa/openvpn.ovpn '';
+      autoStart = false;
+    };
   };
 }
