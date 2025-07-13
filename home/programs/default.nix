@@ -6,6 +6,7 @@
     ./fastfetch.nix
     ./firefox.nix
     ./fish.nix
+    ./gallery-dl.nix
     ./git.nix
     ./htop.nix
     ./kitty.nix
