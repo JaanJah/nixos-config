@@ -10,6 +10,7 @@
     ./git.nix
     ./htop.nix
     ./kitty.nix
+    ./mpv.nix
     ./nix-index.nix
     ./nixcord.nix
     ./obs-studio.nix
