@@ -53,6 +53,9 @@
       tree
       unzip
 
+      # Minecraft launcher
+      prismlauncher
+
       # For running FFXIV
       xivlauncher
 
