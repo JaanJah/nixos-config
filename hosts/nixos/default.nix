@@ -57,6 +57,7 @@
       prismlauncher
 
       # OSRS
+      bolt-launcher
       runelite
 
       # For running FFXIV
