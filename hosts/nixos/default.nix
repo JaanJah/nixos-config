@@ -56,6 +56,9 @@
       # Minecraft launcher
       prismlauncher
 
+      # OSRS
+      runelite
+
       # For running FFXIV
       xivlauncher
 
