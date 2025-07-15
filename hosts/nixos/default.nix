@@ -53,6 +53,8 @@
       tree
       unzip
 
+      rocketchat-desktop
+
       # Minecraft launcher
       prismlauncher
 
