@@ -52,6 +52,7 @@
       spotify
       tree
       unzip
+      dig
 
       rocketchat-desktop
 
