@@ -54,6 +54,8 @@
       unzip
       dig
 
+      jdk
+
       rocketchat-desktop
 
       # Minecraft launcher
