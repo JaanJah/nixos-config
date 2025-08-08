@@ -74,6 +74,8 @@
       binutils
       libgcc
 
+      stremio
+
       # Markdown language server
       marksman
 
