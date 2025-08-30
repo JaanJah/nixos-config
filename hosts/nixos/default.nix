@@ -54,7 +54,7 @@
       unzip
       dig
 
-      jdk
+      jdk11
 
       rocketchat-desktop
 
