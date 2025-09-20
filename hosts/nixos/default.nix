@@ -37,7 +37,24 @@
   programs.steam.enable = true;
   programs.nix-ld = {
     enable = true;
-    #libraries = with pkgs; [];
+    libraries = with pkgs; [
+      # Needed for RS3
+      gtk2
+      xorg.libSM
+      xorg.libICE
+      xorg.libX11
+      xorg.libXxf86vm
+      glib
+      pango
+      gdk-pixbuf
+      cairo
+      libcap
+      # Permitted explicitly in system.nix
+      openssl_1_1
+      sdl2-compat
+      mesa
+      libglvnd
+    ];
   };
 
   environment = {
@@ -54,6 +71,7 @@
       unzip
       dig
 
+      # For running OSRS
       jdk11
 
       rocketchat-desktop
@@ -61,8 +79,12 @@
       # Minecraft launcher
       prismlauncher
 
-      # OSRS
-      bolt-launcher
+      # Runescape
+      (bolt-launcher.override {
+        # Launch options: /usr/bin/env SDL_VIDEODRIVER=x11 %command%
+        # @link https://github.com/Adamcake/Bolt/issues/147#issue-3206473355
+        enableRS3 = true;
+      })
       runelite
 
       # For running FFXIV

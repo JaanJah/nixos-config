@@ -47,8 +47,13 @@
       "flakes"
     ];
   };
-  nixpkgs.config.allowUnfree = true;
-
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      # Needed for libcrypto.so.1.1 to work
+      "openssl-1.1.1w"
+    ];
+  };
   services = {
     desktopManager.plasma6.enable = true;
     displayManager = {
