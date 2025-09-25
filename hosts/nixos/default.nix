@@ -96,7 +96,8 @@
       binutils
       libgcc
 
-      stremio
+      # Disable until this is fixed: https://github.com/nixos/nixpkgs/issues/437992
+      # stremio
 
       # Markdown language server
       marksman

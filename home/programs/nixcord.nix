@@ -27,7 +27,6 @@
 
         # Plugins
         copyFileContents.enable = true;
-        emoteCloner.enable = true;
         experiments.enable = true;
         fixSpotifyEmbeds.enable = true;
         fixYoutubeEmbeds.enable = true;

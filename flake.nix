@@ -63,7 +63,7 @@
                 home-manager.backupFileExtension = "bak";
                 home-manager.sharedModules = [
                   inputs.nixcord.homeModules.nixcord
-                  plasma-manager.homeManagerModules.plasma-manager
+                  plasma-manager.homeModules.plasma-manager
                 ];
                 home-manager.users.${username} = import ./users/${username}/home.nix;
               }
