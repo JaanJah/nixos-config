@@ -15,7 +15,7 @@
       NPM_CONFIG_PREFIX = "${config.home.homeDirectory}/.npm-global";
     };
     packages = with pkgs; [
-      nodejs
+      nodejs_24
     ];
     stateVersion = "25.05";
   };
