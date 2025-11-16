@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
   imports = [
     # Import modules
@@ -59,63 +59,70 @@
 
   environment = {
     localBinInPath = true;
-    systemPackages = with pkgs; [
-      bc
-      bitwarden-desktop
-      nixfmt-rfc-style
-      ncdu
-      kitty
-      openvpn
-      spotify
-      tree
-      unzip
-      dig
+    systemPackages =
+      let
+        stremioPkgs = import inputs.nixpkgs-for-stremio {
+          inherit (pkgs) system;
+        };
+      in
+      with pkgs;
+      [
+        bc
+        bitwarden-desktop
+        nixfmt-rfc-style
+        ncdu
+        kitty
+        openvpn
+        spotify
+        tree
+        unzip
+        dig
 
-      # For running OSRS
-      jdk11
+        # For running OSRS
+        jdk11
 
-      rocketchat-desktop
+        rocketchat-desktop
 
-      # Minecraft launcher
-      prismlauncher
+        # Minecraft launcher
+        prismlauncher
 
-      # Runescape
-      (bolt-launcher.override {
-        # Launch options: /usr/bin/env SDL_VIDEODRIVER=x11 %command%
-        # @link https://github.com/Adamcake/Bolt/issues/147#issue-3206473355
-        enableRS3 = true;
-      })
-      runelite
+        # Runescape
+        (bolt-launcher.override {
+          # Launch options: /usr/bin/env SDL_VIDEODRIVER=x11 %command%
+          # @link https://github.com/Adamcake/Bolt/issues/147#issue-3206473355
+          enableRS3 = true;
+        })
+        runelite
 
-      # For running FFXIV
-      xivlauncher
+        # For running FFXIV
+        xivlauncher
 
-      # https://github.com/0xAX/asm
-      gnumake
-      nasm
-      binutils
-      libgcc
+        # https://github.com/0xAX/asm
+        gnumake
+        nasm
+        binutils
+        libgcc
 
-      # Disable until this is fixed: https://github.com/nixos/nixpkgs/issues/437992
-      # stremio
+        # See: https://github.com/NixOS/nixpkgs/issues/437992
+        (stremioPkgs.stremio)
 
-      # Markdown language server
-      marksman
+        # Markdown language server
+        marksman
 
-      # Wine stuff
-      wineWowPackages.stable
-      winetricks
+        # Wine stuff
+        wineWowPackages.stable
+        winetricks
 
-      kdePackages.kate
-      kdePackages.okular
-      # For screensharing on discord
-      kdePackages.xwaylandvideobridge
+        kdePackages.kate
+        kdePackages.okular
+        # For screensharing on discord
+        kdePackages.xwaylandvideobridge
 
-      (pkgs.writeShellScriptBin "vesktop-x11" ''
-        export XDG_SESSION_TYPE=x11
-        exec vesktop "$@"
-      '')
-    ];
+        (pkgs.writeShellScriptBin "vesktop-x11" ''
+          export XDG_SESSION_TYPE=x11
+          exec vesktop "$@"
+        '')
+      ];
   };
 
   # This value determines the NixOS release from which the default

@@ -20,6 +20,14 @@
       inputs.home-manager.follows = "home-manager";
     };
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+
+    # qt5 has been flagged as unmaintained and insecure, so we must explicitly
+    # permit its usage to run Stremio. However, since insecure packages are not
+    # built by Hydra once marked with known vulnerabilities, we use a pinned,
+    # older nixpkgs revision from before that change. This ensures Hydra can
+    # provide prebuilt binaries, since building qt5 locally is too heavy.
+    # See: https://github.com/NixOS/nixpkgs/issues/437992#issuecomment-3380880457
+    nixpkgs-for-stremio.url = "nixpkgs/5135c59491985879812717f4c9fea69604e7f26f";
   };
 
   outputs =
@@ -47,6 +55,7 @@
             username = "jaan";
             specialArgs = {
               inherit username;
+              inherit inputs;
             };
           in
           nixpkgs.lib.nixosSystem {
