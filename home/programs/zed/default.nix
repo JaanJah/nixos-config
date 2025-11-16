@@ -70,7 +70,8 @@
       calls = {
         mute_on_join = true;
       };
-      format_on_save = "on";
+      # See: https://github.com/zed-industries/zed/pull/39400
+      format_on_save = "off";
       git = {
         inline_blame = {
           enabled = false;
