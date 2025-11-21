@@ -30,6 +30,8 @@
       # Add fonts that support chinese/japanese/korean characters
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
+      # Hopefully fix blurry üõöä characters in some fonts
+      noto-fonts-lgc-plus
     ];
   };
 
