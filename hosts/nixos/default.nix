@@ -77,6 +77,7 @@
         tree
         unzip
         dig
+        git-lfs
 
         # For running OSRS
         jdk11
