@@ -8,7 +8,6 @@
     # https://zed.dev/extensions
     extensions = [
       # Language Servers
-      "discord-presence"
       "dockerfile"
       "html"
       "git-firefly"
