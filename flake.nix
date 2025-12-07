@@ -95,6 +95,9 @@
             };
             deadnix = {
               enable = true;
+              excludes = [
+                "hardware-configuration\\.nix$"
+              ];
             };
           };
         };
