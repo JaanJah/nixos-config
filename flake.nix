@@ -19,7 +19,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+    # FIXME: See: https://github.com/cachix/git-hooks.nix/pull/664 && https://github.com/cachix/git-hooks.nix/pull/665
+    # pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+    pre-commit-hooks.url = "github:cachix/git-hooks.nix/50b9238891e388c9fdc6a5c49e49c42533a1b5ce";
 
     # qt5 has been flagged as unmaintained and insecure, so we must explicitly
     # permit its usage to run Stremio. However, since insecure packages are not
@@ -95,11 +97,19 @@
         };
       });
 
+      # Enter a development shell with `nix develop`.
+      # The hooks will be installed automatically.
+      # Or run pre-commit manually with `nix develop -c pre-commit run --all-files`
       devShells = forAllSystems (system: {
-        default = nixpkgs.legacyPackages.${system}.mkShell {
-          inherit (self.checks.${system}.pre-commit-check) shellHook;
-          buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
-        };
+        default =
+          let
+            pkgs = nixpkgs.legacyPackages.${system};
+            inherit (self.checks.${system}.pre-commit-check) shellHook enabledPackages;
+          in
+          pkgs.mkShell {
+            inherit shellHook;
+            buildInputs = enabledPackages;
+          };
       });
     };
 }
