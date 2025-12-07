@@ -93,6 +93,9 @@
                 "plasma\\.nix$"
               ];
             };
+            deadnix = {
+              enable = true;
+            };
           };
         };
       });
