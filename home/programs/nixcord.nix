@@ -1,5 +1,5 @@
 {
-  # https://github.com/KaylorBen/nixcord/blob/cc750b99c76c83809cb7e492cab6930c610faa64/docs/INDEX.md
+  # https://github.com/FlameFlag/nixcord/blob/aa8081c2a02984ce81c2d45eaf4ec40d4e450217/README.md
   programs.nixcord = {
     enable = true;
     discord = {
@@ -8,23 +8,10 @@
     vesktop = {
       enable = true;
     };
+    # TODO: Look into Equibop
     config = {
-      # https://github.com/KaylorBen/nixcord/blob/cc750b99c76c83809cb7e492cab6930c610faa64/docs/plugins.md
+      # https://github.com/FlameFlag/nixcord/blob/aa8081c2a02984ce81c2d45eaf4ec40d4e450217/modules/plugins/shared.nix
       plugins = {
-        # Defaults, don't touch these unless you know what you're doing
-        chatInputButtonAPI.enable = true;
-        commandsAPI.enable = true;
-        crashHandler.attemptToPreventCrashes = true;
-        crashHandler.enable = true;
-        memberListDecoratorsAPI.enable = true;
-        messageAccessoriesAPI.enable = true;
-        messageDecorationsAPI.enable = true;
-        messageEventsAPI.enable = true;
-        messagePopoverAPI.enable = true;
-        messageUpdaterAPI.enable = true;
-        serverListAPI.enable = true;
-        userSettingsAPI.enable = true;
-
         # Plugins
         copyFileContents.enable = true;
         experiments.enable = true;

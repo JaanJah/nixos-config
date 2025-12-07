@@ -2,7 +2,7 @@
   # TODO: Setup ssh config for different ssh keys for different project
   programs.git = {
     enable = true;
-    extraConfig = {
+    settings = {
       alias = {
         st = "status";
         lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit";

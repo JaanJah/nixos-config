@@ -116,13 +116,6 @@
 
         kdePackages.kate
         kdePackages.okular
-        # For screensharing on discord
-        kdePackages.xwaylandvideobridge
-
-        (pkgs.writeShellScriptBin "vesktop-x11" ''
-          export XDG_SESSION_TYPE=x11
-          exec vesktop "$@"
-        '')
       ];
   };
 
