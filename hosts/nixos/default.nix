@@ -78,7 +78,6 @@
         unzip
         dig
         git-lfs
-        yt-dlp
 
         # For running OSRS
         jdk11

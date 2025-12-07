@@ -18,5 +18,6 @@
     ./thunderbird.nix
     ./uv.nix
     ./vim.nix
+    ./yt-dlp.nix
   ];
 }
