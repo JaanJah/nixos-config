@@ -19,6 +19,7 @@
           (extension "imagus" "{00000f2a-7cde-4f20-83ed-434fcb420d71}")
           (extension "tampermonkey" "firefox@tampermonkey.net")
           (extension "ublock-origin" "uBlock0@raymondhill.net")
+          (extension "web-scrobbler" "{799c0914-748b-41df-a25c-22d008f9e83f}")
         ];
     };
   };
