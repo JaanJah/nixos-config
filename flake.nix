@@ -19,9 +19,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    # FIXME: See: https://github.com/cachix/git-hooks.nix/pull/664 && https://github.com/cachix/git-hooks.nix/pull/665
-    # pre-commit-hooks.url = "github:cachix/git-hooks.nix";
-    pre-commit-hooks.url = "github:cachix/git-hooks.nix/50b9238891e388c9fdc6a5c49e49c42533a1b5ce";
+    pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
     # qt5 has been flagged as unmaintained and insecure, so we must explicitly
     # permit its usage to run Stremio. However, since insecure packages are not
