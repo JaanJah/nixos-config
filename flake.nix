@@ -57,10 +57,11 @@
               inherit username;
               inherit inputs;
             };
+            system = "x86_64-linux";
           in
           nixpkgs.lib.nixosSystem {
             inherit specialArgs;
-            system = "x86_64-linux";
+            inherit system;
             modules = [
               ./hosts/nixos
               nix-index-database.nixosModules.nix-index
