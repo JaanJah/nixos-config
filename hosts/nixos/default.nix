@@ -2,7 +2,11 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, pkgs, ... }:
+{
+  # inputs,
+  pkgs,
+  ...
+}:
 {
   imports = [
     # Import modules
@@ -60,13 +64,12 @@
   environment = {
     localBinInPath = true;
     systemPackages =
-      let
-        stremioPkgs = import inputs.nixpkgs-for-stremio {
-          inherit (pkgs) system;
-        };
-      in
-      with pkgs;
-      [
+      # let
+      #   stremioPkgs = import inputs.nixpkgs-for-stremio {
+      #     inherit (pkgs) system;
+      #   };
+      # in
+      with pkgs; [
         bc
         bitwarden-desktop
         nixfmt-rfc-style
@@ -105,7 +108,9 @@
         libgcc
 
         # See: https://github.com/NixOS/nixpkgs/issues/437992
-        (stremioPkgs.stremio)
+        # FIXME: stremio is using older mpv with settings my system is unable to run, use web version instead
+        # @link https://web.stremio.com/#/
+        # (stremioPkgs.stremio)
 
         # Markdown language server
         marksman
