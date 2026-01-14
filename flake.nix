@@ -1,3 +1,4 @@
+# TODO: Look into https://flake.parts
 {
   description = "jaan's NixOS configuration";
 
