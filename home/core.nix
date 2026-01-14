@@ -4,6 +4,18 @@
   username,
   ...
 }:
+let
+  hytaleLauncher = import ../packages/hytale.nix {
+    inherit pkgs;
+    inherit (pkgs)
+      stdenv
+      fetchurl
+      ostree
+      flatpak
+      buildFHSEnv
+      ;
+  };
+in
 {
   home = {
     inherit username;
@@ -19,6 +31,8 @@
       nodejs_24
       python315
       (lib.meta.lowPrio python314)
+
+      hytaleLauncher
     ];
     stateVersion = "25.05";
   };
