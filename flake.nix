@@ -29,6 +29,8 @@
     # provide prebuilt binaries, since building qt5 locally is too heavy.
     # See: https://github.com/NixOS/nixpkgs/issues/437992#issuecomment-3380880457
     nixpkgs-for-stremio.url = "nixpkgs/5135c59491985879812717f4c9fea69604e7f26f";
+
+    hytale-launcher.url = "github:JPyke3/hytale-launcher-nix";
   };
 
   outputs =
