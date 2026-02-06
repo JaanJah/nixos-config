@@ -79,6 +79,8 @@
         dig
         git-lfs
 
+        calibre
+
         # For running OSRS
         jdk11
 
