@@ -7,6 +7,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Needed for protonvpn
+  networking.firewall.checkReversePath = false;
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

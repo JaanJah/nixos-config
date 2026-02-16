@@ -89,6 +89,9 @@
         # Minecraft launcher
         prismlauncher
 
+        wireguard-tools
+        protonvpn-gui
+
         # Runescape
         (bolt-launcher.override {
           # Launch options: /usr/bin/env SDL_VIDEODRIVER=x11 %command%
