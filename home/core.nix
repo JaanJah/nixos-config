@@ -4,6 +4,9 @@
   username,
   ...
 }:
+let
+  rootapp = pkgs.callPackage ../packages/rootapp.nix { };
+in
 {
   home = {
     inherit username;
@@ -19,6 +22,8 @@
       nodejs_24
       python315
       (lib.meta.lowPrio python314)
+
+      rootapp
     ];
     stateVersion = "25.05";
   };
