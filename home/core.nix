@@ -6,6 +6,7 @@
 }:
 let
   rootapp = pkgs.callPackage ../packages/rootapp.nix { };
+  xclicker = pkgs.callPackage ../packages/xclicker.nix { };
 in
 {
   home = {
@@ -24,6 +25,7 @@ in
       (lib.meta.lowPrio python314)
 
       rootapp
+      xclicker
     ];
     stateVersion = "25.05";
   };

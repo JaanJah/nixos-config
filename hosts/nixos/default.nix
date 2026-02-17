@@ -92,6 +92,9 @@
         wireguard-tools
         protonvpn-gui
 
+        # TIDAL
+        tidal-hifi
+
         # Runescape
         (bolt-launcher.override {
           # Launch options: /usr/bin/env SDL_VIDEODRIVER=x11 %command%
