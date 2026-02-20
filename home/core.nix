@@ -24,6 +24,7 @@ in
       nodejs_24
       python315
       (lib.meta.lowPrio python314)
+      uv
 
       formationbuilderidle
       rootapp
