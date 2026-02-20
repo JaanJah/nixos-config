@@ -37,7 +37,7 @@
       agent = {
         default_model = {
           provider = "copilot_chat";
-          model = "gpt-4.1";
+          model = "gpt-5.2";
         };
       };
       base_keymap = "JetBrains";
