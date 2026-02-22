@@ -69,7 +69,7 @@
       [
         bc
         bitwarden-desktop
-        nixfmt-rfc-style
+        nixfmt
         ncdu
         kitty
         openvpn
