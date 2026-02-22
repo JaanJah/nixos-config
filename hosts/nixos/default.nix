@@ -40,10 +40,10 @@
     libraries = with pkgs; [
       # Needed for RS3
       gtk2
-      xorg.libSM
-      xorg.libICE
-      xorg.libX11
-      xorg.libXxf86vm
+      libSM
+      libICE
+      libX11
+      libXxf86vm
       glib
       pango
       gdk-pixbuf
@@ -119,7 +119,7 @@
         marksman
 
         # Wine stuff
-        wineWowPackages.stable
+        wineWow64Packages.stable
         winetricks
 
         kdePackages.kate

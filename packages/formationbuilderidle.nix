@@ -3,12 +3,7 @@
   fetchurl,
   stdenv,
   makeWrapper,
-  xorg,
-  wayland,
-  libxkbcommon,
-  vulkan-loader,
-  alsa-lib,
-  pulseaudio,
+  pkgs,
 }:
 
 let
@@ -21,16 +16,16 @@ let
     sha256 = "sha256-OqNV6R69zTfHYpcjZwv9qd3Z0Eb7bj+95UeBO8ZRbKI=";
   };
 
-  runtimeLibs = [
-    xorg.libX11
-    xorg.libXcursor
-    xorg.libXi
-    xorg.libXrandr
-    xorg.libXrender
-    xorg.libXext
-    xorg.libXfixes
-    xorg.libXinerama
-    xorg.libXxf86vm
+  runtimeLibs = with pkgs; [
+    libX11
+    libXcursor
+    libXi
+    libXrandr
+    libXrender
+    libXext
+    libXfixes
+    libXinerama
+    libXxf86vm
     wayland
     libxkbcommon
     vulkan-loader
