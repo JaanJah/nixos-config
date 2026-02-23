@@ -79,6 +79,8 @@
         dig
         git-lfs
 
+        qdigidoc
+
         calibre
 
         # For running OSRS
