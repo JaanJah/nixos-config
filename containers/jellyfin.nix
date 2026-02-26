@@ -5,7 +5,7 @@
     "jellyfin/cache/.keep".text = "";
     "jellyfin/media/.keep".text = "";
   };
-
+  # journalctl --user -u jellyfin.service -f
   virtualisation.quadlet.containers.jellyfin = {
     autoStart = true;
 
@@ -26,10 +26,6 @@
         "0"
         "143"
       ];
-    };
-
-    unitConfig = {
-      WantedBy = [ "default.target" ];
     };
   };
 }
