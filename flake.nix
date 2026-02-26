@@ -21,6 +21,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+    quadlet-nix.url = "github:SEIAROTg/quadlet-nix";
 
     # qt5 has been flagged as unmaintained and insecure, so we must explicitly
     # permit its usage to run Stremio. However, since insecure packages are not
@@ -38,6 +39,7 @@
       self,
       nixpkgs,
       nix-index-database,
+      quadlet-nix,
       home-manager,
       plasma-manager,
       ...
@@ -80,6 +82,7 @@
                 ];
                 home-manager.users.${username} = import ./users/${username}/home.nix;
               }
+              quadlet-nix.nixosModules.quadlet
             ];
           };
       };
