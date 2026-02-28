@@ -1,6 +1,5 @@
 { config, ... }:
 {
-  # optional: create host directories
   home.file = {
     "jackett/config/.keep".text = "";
     "media/downloads/.keep".text = "";

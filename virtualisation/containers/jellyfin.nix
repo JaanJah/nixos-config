@@ -9,7 +9,7 @@
     autoStart = true;
 
     containerConfig = {
-      # https://hub.docker.com/r/jellyfin/jellyfin/tags
+      # https://github.com/jellyfin/jellyfin/pkgs/container/jellyfin
       image = "ghcr.io/jellyfin/jellyfin:2026022305";
       autoUpdate = "registry";
       publishPorts = [ "8096:8096/tcp" ];
