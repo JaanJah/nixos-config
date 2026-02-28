@@ -7,13 +7,24 @@
     ../../home/programs
 
     inputs.quadlet-nix.homeManagerModules.quadlet
-    # Command cheat-sheet for quadlets:
+
+    ### VIRTUALISATION ###
+    ## NETWORKS ##
+    # systemctl --user status <network>-network.service
+    # podman network ls
+    # podman network inspect <network>
+    ../../virtualisation/networks/media.nix
+
+    ## CONTAINERS ##
+    # Command cheat-sheet for quadlet containers:
     # systemctl --user restart <container>.service
     # journalctl --user -u <container>.service -f
     # podman pause <container>
     # podman unpause <container>
     # podman ps --all | grep paused
-    ../../containers/jellyfin.nix
-    ../../containers/seerr.nix
+    # http://localhost:8096 / http://jellyfin:8096
+    ../../virtualisation/containers/jellyfin.nix
+    # http://localhost:5055 / http://seerr:5055
+    ../../virtualisation/containers/seerr.nix
   ];
 }

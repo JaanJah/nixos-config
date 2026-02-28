@@ -17,6 +17,7 @@
 
       publishPorts = [ "5055:5055" ];
       userns = "keep-id";
+      networks = [ "media.network" ];
 
       volumes = [
         "${config.home.homeDirectory}/seerr/config:/app/config:Z"

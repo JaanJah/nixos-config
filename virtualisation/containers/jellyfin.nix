@@ -13,6 +13,7 @@
       autoUpdate = "registry";
       publishPorts = [ "8096:8096/tcp" ];
       userns = "keep-id";
+      networks = [ "media.network" ];
       volumes = [
         "${config.home.homeDirectory}/jellyfin/config:/config:Z"
         "${config.home.homeDirectory}/jellyfin/cache:/cache:Z"
