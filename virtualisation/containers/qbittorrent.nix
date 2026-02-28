@@ -22,7 +22,7 @@
 
       volumes = [
         "${config.home.homeDirectory}/qbittorrent/config:/config:Z"
-        "${config.home.homeDirectory}/media/torrents:/data:Z"
+        "${config.home.homeDirectory}/media/torrents:/data/torrents:Z"
       ];
 
       publishPorts = [

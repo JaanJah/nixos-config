@@ -27,6 +27,8 @@
     ../../virtualisation/containers/seerr.nix
     # http://localhost:7878 / http://radarr:7878
     ../../virtualisation/containers/radarr.nix
+    # http://localhost:8989 / http://sonarr:8989
+    ../../virtualisation/containers/sonarr.nix
     # http://localhost:8080 / http://qbittorrent:8080
     # http://localhost:6881 / http://qbittorrent:6881
     ../../virtualisation/containers/qbittorrent.nix
