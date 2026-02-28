@@ -16,7 +16,6 @@
     ../../virtualisation/networks/media.nix
 
     ## CONTAINERS ##
-    # Command cheat-sheet for quadlet containers:
     # systemctl --user restart <container>.service
     # journalctl --user -u <container>.service -f
     # podman pause <container>
@@ -26,5 +25,7 @@
     ../../virtualisation/containers/jellyfin.nix
     # http://localhost:5055 / http://seerr:5055
     ../../virtualisation/containers/seerr.nix
+    # http://localhost:7878 / http://radarr:7878
+    ../../virtualisation/containers/radarr.nix
   ];
 }

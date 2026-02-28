@@ -3,7 +3,7 @@
   home.file = {
     "jellyfin/config/.keep".text = "";
     "jellyfin/cache/.keep".text = "";
-    "jellyfin/media/.keep".text = "";
+    "media/media/.keep".text = "";
   };
   virtualisation.quadlet.containers.jellyfin = {
     autoStart = true;
@@ -17,7 +17,7 @@
       volumes = [
         "${config.home.homeDirectory}/jellyfin/config:/config:Z"
         "${config.home.homeDirectory}/jellyfin/cache:/cache:Z"
-        "${config.home.homeDirectory}/jellyfin/media:/media:Z"
+        "${config.home.homeDirectory}/media/media:/media:Z"
       ];
     };
 
