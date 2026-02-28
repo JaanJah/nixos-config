@@ -13,7 +13,7 @@
       image = "lscr.io/linuxserver/qbittorrent:5.1.4";
 
       environments = {
-        TZ = "Etc/UTC";
+        TZ = "Europe/Tallinn";
         WEBUI_PORT = "8080";
         TORRENTING_PORT = "6881";
       };

@@ -13,7 +13,7 @@
       image = "lscr.io/linuxserver/radarr:6.0.4";
 
       environments = {
-        TZ = "Etc/UTC";
+        TZ = "Europe/Tallinn";
       };
       userns = "keep-id";
       networks = [ "media.network" ];
