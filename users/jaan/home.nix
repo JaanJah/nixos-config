@@ -30,5 +30,7 @@
     # http://localhost:8080 / http://qbittorrent:8080
     # http://localhost:6881 / http://qbittorrent:6881
     ../../virtualisation/containers/qbittorrent.nix
+    # http://localhost:9117 / http://jackett:9117
+    ../../virtualisation/containers/jackett.nix
   ];
 }
