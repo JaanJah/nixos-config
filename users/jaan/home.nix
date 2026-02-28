@@ -31,7 +31,7 @@
     # http://localhost:6881 / http://qbittorrent:6881
     ../../virtualisation/containers/qbittorrent.nix
     # http://localhost:9117 / http://jackett:9117
-    ../../virtualisation/containers/jackett.nix
+    #../../virtualisation/containers/jackett.nix
     # http://localhost:8191 / http://flaresolverr:8191
     ../../virtualisation/containers/flaresolverr.nix
     # http://localhost:9696 / http://prowlarr:9696

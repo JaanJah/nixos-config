@@ -2,7 +2,7 @@
 {
   home.file = {
     "jackett/config/.keep".text = "";
-    "media/downloads/.keep".text = "";
+    "media/torrents/.keep".text = "";
   };
 
   virtualisation.quadlet.containers.jackett = {
