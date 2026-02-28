@@ -8,5 +8,6 @@
 
     inputs.quadlet-nix.homeManagerModules.quadlet
     ../../containers/jellyfin.nix
+    ../../containers/seerr.nix
   ];
 }
