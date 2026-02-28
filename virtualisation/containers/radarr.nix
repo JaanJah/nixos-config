@@ -9,7 +9,7 @@
     autoStart = true;
 
     containerConfig = {
-      # NB!
+      # https://quay.io/repository/linuxserver.io/radarr?tab=tags
       image = "lscr.io/linuxserver/radarr:6.0.4";
 
       environments = {

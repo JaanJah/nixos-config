@@ -6,6 +6,7 @@
     autoStart = true;
 
     containerConfig = {
+      # https://hub.docker.com/r/seerr/seerr/tags
       image = "ghcr.io/seerr-team/seerr:v3.1.0";
       notify = "healthy";
 
