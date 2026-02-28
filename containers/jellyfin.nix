@@ -5,10 +5,6 @@
     "jellyfin/cache/.keep".text = "";
     "jellyfin/media/.keep".text = "";
   };
-  # journalctl --user -u jellyfin.service -f
-  # podman pause jellyfin
-  # podman unpause jellyfin
-  # podman ps --all | grep paused
   virtualisation.quadlet.containers.jellyfin = {
     autoStart = true;
 
