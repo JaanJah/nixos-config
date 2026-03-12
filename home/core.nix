@@ -5,7 +5,6 @@
   ...
 }:
 let
-  formationbuilderidle = pkgs.callPackage ../packages/formationbuilderidle.nix { };
   rootapp = pkgs.callPackage ../packages/rootapp.nix { };
   xclicker = pkgs.callPackage ../packages/xclicker.nix { };
 in
@@ -26,7 +25,6 @@ in
       (lib.meta.lowPrio python314)
       uv
 
-      formationbuilderidle
       rootapp
       xclicker
     ];

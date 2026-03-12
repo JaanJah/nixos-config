@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 {
   imports = [
     # Import modules
@@ -59,77 +59,69 @@
 
   environment = {
     localBinInPath = true;
-    systemPackages =
-      let
-        stremioPkgs = import inputs.nixpkgs-for-stremio {
-          inherit (pkgs) system;
-        };
-      in
-      with pkgs;
-      [
-        bc
-        bitwarden-desktop
-        nixfmt
-        ncdu
-        kitty
-        openvpn
-        spotify
-        tree
-        unzip
-        dig
-        git-lfs
+    systemPackages = with pkgs; [
+      bc
+      bitwarden-desktop
+      nixfmt
+      ncdu
+      kitty
+      openvpn
+      spotify
+      tree
+      unzip
+      dig
+      git-lfs
 
-        qdigidoc
+      qdigidoc
 
-        calibre
+      calibre
 
-        # For running OSRS
-        jdk11
+      # For running OSRS
+      jdk11
 
-        rocketchat-desktop
+      rocketchat-desktop
 
-        # Minecraft launcher
-        prismlauncher
+      # Minecraft launcher
+      prismlauncher
 
-        wireguard-tools
-        protonvpn-gui
+      wireguard-tools
+      protonvpn-gui
 
-        # TIDAL
-        tidal-hifi
+      # TIDAL
+      tidal-hifi
 
-        jellyfin-desktop
-        google-chrome
+      jellyfin-desktop
+      google-chrome
 
-        # Runescape
-        (bolt-launcher.override {
-          # Launch options: /usr/bin/env SDL_VIDEODRIVER=x11 %command%
-          # @link https://github.com/Adamcake/Bolt/issues/147#issue-3206473355
-          enableRS3 = true;
-        })
-        runelite
+      # Runescape
+      (bolt-launcher.override {
+        # Launch options: /usr/bin/env SDL_VIDEODRIVER=x11 %command%
+        # @link https://github.com/Adamcake/Bolt/issues/147#issue-3206473355
+        enableRS3 = true;
+      })
+      runelite
 
-        # For running FFXIV
-        xivlauncher
+      # For running FFXIV
+      xivlauncher
 
-        # https://github.com/0xAX/asm
-        gnumake
-        nasm
-        binutils
-        libgcc
+      # https://github.com/0xAX/asm
+      gnumake
+      nasm
+      binutils
+      libgcc
 
-        # See: https://github.com/NixOS/nixpkgs/issues/437992
-        (stremioPkgs.stremio)
+      stremio-linux-shell
 
-        # Markdown language server
-        marksman
+      # Markdown language server
+      marksman
 
-        # Wine stuff
-        wineWow64Packages.stable
-        winetricks
+      # Wine stuff
+      wineWow64Packages.stable
+      winetricks
 
-        kdePackages.kate
-        kdePackages.okular
-      ];
+      kdePackages.kate
+      kdePackages.okular
+    ];
   };
 
   # This value determines the NixOS release from which the default

@@ -11,7 +11,7 @@ let
   src = fetchurl {
     # nix store prefetch-file --json https://installer.rootapp.com/installer/Linux/X64/Root.AppImage
     url = "https://installer.rootapp.com/installer/Linux/X64/Root.AppImage";
-    sha256 = "sha256-HKY/Jox7zFi1s0pTCM1UzFULlEQ/ElTF26kcpZGexts=";
+    sha256 = "sha256-hWh2bi5lCfCBuP0liSMui/94OumfTDnFVSa8wIdbD64=";
   };
 in
 appimageTools.wrapType2 {
