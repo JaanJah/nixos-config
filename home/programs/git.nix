@@ -28,6 +28,9 @@
         email = "jaanjahilo@outlook.com";
         signingKey = "~/.ssh/id_ed25519.pub";
       };
+      lfs = {
+        enable = true;
+      };
     };
   };
 }
