@@ -6,7 +6,7 @@
 
 let
   pname = "rootapp";
-  version = "0.9.88";
+  version = "0.9.100";
 
   src = fetchurl {
     # nix store prefetch-file --json https://installer.rootapp.com/installer/Linux/X64/Root.AppImage
