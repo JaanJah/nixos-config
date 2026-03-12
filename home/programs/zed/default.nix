@@ -35,18 +35,30 @@
     ];
     userSettings = {
       agent = {
+        always_allow_tool_actions = true;
         default_model = {
           provider = "copilot_chat";
-          model = "gpt-5.2";
+          model = "gpt-5.3-codex";
         };
       };
       base_keymap = "JetBrains";
-      features = {
-        edit_prediction_provider = "copilot";
+      edit_predictions = {
+        provider = "copilot";
       };
       telemetry = {
         diagnostics = false;
         metrics = false;
+      };
+      auto_install_extensions = {
+        nix = true;
+        catppuccin = true;
+        catpuccin-icons = true;
+        html = true;
+        package-version-server = true;
+        sql = true;
+        git-firefly = true;
+        dockerfile = true;
+        toml = true;
       };
       autosave = "on_focus_change";
       buffer_font_family = "CaskaydiaMono Nerd Font Mono";
