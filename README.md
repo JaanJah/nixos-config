@@ -18,6 +18,13 @@ sudo nix flake update
 nix flake check
 ```
 
+## pre-commit hooks
+
+Setup pre-commit hooks for this repo:
+```
+git config core.hooksPath .githooks
+```
+
 TODO:
 
 - Add docs for troubleshooting

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -eu
+
+# Repository-managed pre-commit hook.
+# Runs the configured pre-commit checks via the flake dev shell.
+exec nix develop --command pre-commit run --hook-stage pre-commit "$@"
