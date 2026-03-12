@@ -98,6 +98,7 @@
         tidal-hifi
 
         jellyfin-desktop
+        google-chrome
 
         # Runescape
         (bolt-launcher.override {
