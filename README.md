@@ -5,8 +5,6 @@ This repo contains my NixOS config I use on my home machine.
 ## Usage
 
 ```sh
-# Install pre-commit hooks
-nix develop
 # Symlink flake.nix and flake.lock
 sudo ln -s ~/nixos-config/flake.nix /etc/nixos/flake.nix
 sudo ln -s ~/nixos-config/flake.lock /etc/nixos/flake.lock
@@ -14,14 +12,13 @@ sudo ln -s ~/nixos-config/flake.lock /etc/nixos/flake.lock
 sudo nixos-rebuild switch
 # Update flake.lock
 sudo nix flake update
-# Run pre-commit hook locally
-nix flake check
 ```
 
 ## pre-commit hooks
 
 Setup pre-commit hooks for this repo:
-```
+
+```sh
 git config core.hooksPath .githooks
 ```
 
