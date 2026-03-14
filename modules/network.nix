@@ -5,11 +5,17 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  # Enable networking
-  networking.networkmanager.enable = true;
+  networking = {
+    # Enable networking
+    networkmanager.enable = true;
+    firewall = {
+      # Needed for protonvpn
+      checkReversePath = false;
+      # jellyfin
+      allowedTCPPorts = [ 8096 ];
+    };
+  };
 
-  # Needed for protonvpn
-  networking.firewall.checkReversePath = false;
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
